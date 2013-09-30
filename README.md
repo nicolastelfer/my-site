@@ -1,11 +1,8 @@
-repo
+My Site
 ====
 
-Nicolas Telfer Guimera GIT repositoriy
-
-
 I am a front-end dev working with HTML5, CSS3 and JavaScript.
-In this repo I will have personal projects and experimental work.
+This repo is for my new personal website. 
 
 ######
 
