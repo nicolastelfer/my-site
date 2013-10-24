@@ -4,11 +4,23 @@
     <list default="true" id="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" name="Default" comment="" />
     <ignored path="personal-site.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/main-styles.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1380579569471" ignored="false" />
+    <file path="/main-styles.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382176176200" ignored="false" />
     <file path="/_base.defaults.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1380579498631" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/respond.min.js" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1380579814235" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/bootstrap.min.js" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1380579974413" ignored="false" />
     <file path="$USER_HOME$/AppData/Local/Temp/bootstrap.min.css" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1380579986056" ignored="false" />
+    <file path="/test-parallax.html" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382175943253" ignored="false" />
+    <file path="/_chunks.defaultS.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382173005513" ignored="false" />
+    <file path="/_chunk.section-top.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382173039159" ignored="false" />
+    <file path="/dummy.xml" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382175276040" ignored="false" />
+    <file path="/_chunks.defaults.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382174582025" ignored="false" />
+    <file path="$PROJECT_DIR$/site/assets/css/main-styles.css" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382176186253" ignored="false" />
+    <file path="/_chunk.section-banner.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382173613422" ignored="false" />
+    <file path="/_mixins.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382176401372" ignored="false" />
+    <file path="/_typography.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382176155696" ignored="false" />
+    <file path="/_variables.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382175833837" ignored="false" />
+    <file path="/_colors.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382176554332" ignored="false" />
+    <file path="/_links.scss" changelist="9b2c7d91-9ec3-4af6-b027-31c29dea96a6" time="1382176643301" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main-styles.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dev/sass/main-styles.scss">
+      <file leaf-file-name="test-parallax.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test-parallax.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="1" selection-start="175" selection-end="175" vertical-scroll-proportion="0.48253274">
+            <state line="50" column="18" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0317757">
               <folding />
             </state>
           </provider>
@@ -47,17 +59,27 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/dev/sass/chunks/_chunks.defaultS.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/chunks/_chunk.section-top.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/chunks/_chunk.section-banner.scss" />
         <option value="$PROJECT_DIR$/dev/sass/base/_base.defaults.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/base/_variables.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/chunks/_chunks.defaults.scss" />
+        <option value="$PROJECT_DIR$/test-parallax.html" />
+        <option value="$PROJECT_DIR$/dev/sass/base/_typography.scss" />
         <option value="$PROJECT_DIR$/dev/sass/main-styles.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/base/_mixins.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/base/_colors.scss" />
+        <option value="$PROJECT_DIR$/dev/sass/base/_links.scss" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="37" />
-    <option name="y" value="8" />
-    <option name="width" value="1176" />
-    <option name="height" value="641" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -85,7 +107,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -103,10 +124,6 @@
               <option name="myItemId" value="personal-site" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -119,66 +136,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendors" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -214,18 +171,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="personal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -257,23 +205,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="37" y="8" width="1176" height="641" extended-state="1" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29263914" sideWeight="0.6714876" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21515152" sideWeight="0.6712095" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3285124" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -340,93 +288,84 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dev/config.rb">
+    <entry file="file://$PROJECT_DIR$/../../../downloads/Parallax-Scrolling-master/Parallax-Scrolling-master/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="46" selection-start="46" selection-end="46" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="15" column="73" selection-start="582" selection-end="582" vertical-scroll-proportion="0.1551095" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/sass/base/_fonts.scss">
+    <entry file="file://$PROJECT_DIR$/../../../downloads/Parallax-Scrolling-master/Parallax-Scrolling-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="365" selection-end="365" vertical-scroll-proportion="-0.6896552" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/sass/base/_links.scss">
+    <entry file="file://$PROJECT_DIR$/dev/sass/chunks/_chunk.section-top.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="6" column="1" selection-start="67" selection-end="67" vertical-scroll-proportion="0.18181819" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dev/sass/base/_colors.scss">
+    <entry file="file://$PROJECT_DIR$/dev/sass/chunks/_chunk.section-banner.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/sass/base/_mixins.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="1" selection-start="138" selection-end="138" vertical-scroll-proportion="0.21212122" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/sass/base/_typography.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dev/sass/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="9" column="0" selection-start="73" selection-end="73" vertical-scroll-proportion="0.27272728" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/sass/base/_base.defaults.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="18" selection-start="145" selection-end="145" vertical-scroll-proportion="0.33406115">
-          <folding />
-        </state>
+        <state line="6" column="17" selection-start="91" selection-end="91" vertical-scroll-proportion="0.18181819" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/base.html">
+    <entry file="file://$PROJECT_DIR$/dev/sass/chunks/_chunks.defaults.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="5" column="10" selection-start="80" selection-end="80" vertical-scroll-proportion="0.15151516" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/assets/css/bootstrap.min.css">
+    <entry file="file://$PROJECT_DIR$/dev/sass/base/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="2" column="3" selection-start="19" selection-end="19" vertical-scroll-proportion="0.060606062" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/assets/js/libraries/bootstrap.min.js">
+    <entry file="file://$PROJECT_DIR$/dev/sass/base/_mixins.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="11" selection-start="132" selection-end="132" vertical-scroll-proportion="0.03820225">
-          <folding />
-        </state>
+        <state line="61" column="0" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.969697" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/site/assets/js/vendors/respond.min.js">
+    <entry file="file://$PROJECT_DIR$/../../../downloads/netmag-texturise-web-type-with-css/demo/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="4035" selection-end="4035" vertical-scroll-proportion="0.22921348">
-          <folding />
-        </state>
+        <state line="39" column="30" selection-start="1432" selection-end="1547" vertical-scroll-proportion="0.9379562" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/sass/base/ie.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/sass/base/_colors.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="22" selection-start="210" selection-end="210" vertical-scroll-proportion="0.36363637" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/sass/base/_links.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="6" selection-start="101" selection-end="101" vertical-scroll-proportion="0.3030303" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dev/sass/base/print.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dev/sass/main-styles.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="1" selection-start="175" selection-end="175" vertical-scroll-proportion="0.48253274">
+        <state line="12" column="13" selection-start="206" selection-end="206" vertical-scroll-proportion="0.36363637" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test-parallax.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="18" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0317757">
           <folding />
         </state>
       </provider>

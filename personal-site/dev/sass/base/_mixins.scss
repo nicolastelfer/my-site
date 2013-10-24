@@ -1,0 +1,61 @@
+/*
+ * Mixins
+ */
+
+
+
+/** SKEW  ***********/
+@mixin skew($skew) {
+  -webkit-transform: skewY($skew);
+  -o-transform:skewY($skew);
+  -moz-transform: skewY($skew);
+  -ms-transform: skewY($skew);
+  transform: skewY($skew);
+
+}
+
+/** BORDER RADIUS ***********/
+// Border radius all
+@mixin radius-all($radius) {
+  -webkit-border-radius: $radius;
+  -o-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// Border radius top
+@mixin radius-top($radius) {
+  -webkit-border-top-radius: $radius;
+  -o-border--top-radius: $radius;
+  -moz-border-top-radius: $radius;
+  -ms-border-top-radius: $radius;
+  border-top-radius: $radius;
+}
+
+// Border radius right
+@mixin radius-right($radius) {
+  -webkit-border-right-radius: $radius;
+  -o-border--right-radius: $radius;
+  -moz-border-right-radius: $radius;
+  -ms-border-right-radius: $radius;
+  border-right-radius: $radius;
+}
+
+// Border radius bottom
+@mixin radius-bottom($radius) {
+  -webkit-border-bottom-radius: $radius;
+  -o-border--bottom-radius: $radius;
+  -moz-border-bottom-radius: $radius;
+  -ms-border-bottom-radius: $radius;
+  border-bottom-radius: $radius;
+}
+
+// Border radius left
+@mixin radius-left($radius) {
+  -webkit-border-left-radius: $radius;
+  -o-border--left-radius: $radius;
+  -moz-border-left-radius: $radius;
+  -ms-border-left-radius: $radius;
+  border-left-radius: $radius;
+}

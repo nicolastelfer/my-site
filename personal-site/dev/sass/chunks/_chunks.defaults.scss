@@ -1,0 +1,24 @@
+/*
+ * Set default styles to all chunks
+ */
+
+/** SECTIONS  **********/
+.section {
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+.skew {
+  @include skew(-3deg);
+}
+
+.anim-img {
+
+  img {
+    max-width: 100%;
+  }
+}
+
+/** IMPORTS  **********/
+@import "chunk.section-top";
+@import "chunk.section-banner";
