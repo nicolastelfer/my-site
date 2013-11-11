@@ -1,16 +1,14 @@
-My Site
-====
+=======
+my-site
+=======
 
-I am a front-end dev working with HTML5, CSS3 and JavaScript.
-This repo is for my new personal website. 
+Nicolas Telfer Guimera GIT repositoriy
 
-######
+I've separated the folder structure into Dev and Site in ordeer
+to better manage the sass files.
 
-The intention of this repository is to allow me to improve my skills
-and share with you my technical abilities. 
-I would appreciate collaboration if you feel like supporting colleague
+Also this repo is for the dev version of the site. Oncer this process
+has finsih I'll move into the staging site and implement the structure 
+and styles into a backend system.
 
-
-:)
-
-Many Thanks
+Thanks

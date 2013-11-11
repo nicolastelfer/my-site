@@ -1,0 +1,28 @@
+/*
+  Project: Personal Site
+  Author: Nicolas Telfer
+  Date: 30/092013
+*/
+
+/** IMPORTS  ************/
+@import "base/base.defaults";
+@import "chunks/chunks.defaults";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll; /* always force a scrollbar in non-IE */
+}
+
+body {
+  background: #2d6987;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#wrapper {
+  position: relative;
+}
