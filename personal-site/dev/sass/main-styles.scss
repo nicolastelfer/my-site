@@ -24,5 +24,43 @@ body {
 }
 
 #wrapper {
-  position: relative;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+	section {
+		font-size: 80%;
+	}
+}
+
+@media screen and (max-width: 54em) {
+
+	#wrapper {
+		width: 100%;
+	}
+
+	.column {
+		display: block;
+		width: 100% !important;
+	}
+
+	.text:first-child,
+	.text:nth-child(2) {
+		text-align: center;
+	}
+
+	.icon {
+		margin: 0 auto;
+	}
+
+	.col-2 .column:first-child .icon {
+		margin: 0 auto 50px;
+	}
+
+	.col-2 .column:nth-child(2) .icon {
+		margin: 50px auto 0;
+	}
 }

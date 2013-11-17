@@ -9,7 +9,7 @@
 }
 
 .skew {
-  @include skew(-3deg);
+  @include skew(-1deg);
 }
 
 .anim-img {
@@ -19,6 +19,128 @@
   }
 }
 
+////////
+
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+section {
+	position: relative;
+	padding: 10em 10%;
+	background: #2980b9;
+	color: #fff;
+	text-align: center;
+}
+
+section h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 2.8em;
+	font-weight: 400;
+}
+
+section p {
+	color: rgba(0,0,0,.3);
+	font-size: 1.3em;
+	line-height: 1.5;
+}
+
+
+.text:first-child {
+	text-align: right;
+}
+
+.text:nth-child(2) {
+	text-align: left;
+}
+
+section::before,
+section::after {
+	position: absolute;
+	content: '';
+	pointer-events: none;
+}
+
+.ss-style-doublediagonal {
+	z-index: 1;
+	padding-top: 6em;
+	background: #2072a7;
+}
+
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+	top: 0;
+	left: -25%;
+	z-index: -1;
+	width: 150%;
+	height: 75%;
+	background: inherit;
+	transform: rotate(-2deg);
+	transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+	height: 50%;
+	background: #116094;
+	transform: rotate(-3deg);
+	transform-origin: 3% 0;
+}
+
+.col-2 .column {
+	width: 49%;
+}
+
+.col-3 .column {
+	padding: 0 1%;
+	width: 32.8%;
+	text-align: center;
+}
+
+.col-3 .column p {
+	padding: 1.4em;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.icon {
+	border: .1em solid white;
+	display: block;
+	width: 2em;
+	height: 2em;
+	border-radius: 50%;
+	background: rgba(0,0,0,0.1);
+	color: #fff;
+	text-align: center;
+	font-size: 8em;
+	line-height: 2em;
+	margin: 0 auto;
+}
+
+
+.profile-thumb {
+	background: white;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 200px;
+	width: 20%;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+	}
+}
+
+
 /** IMPORTS  **********/
 @import "chunk.section-top";
 @import "chunk.section-banner";
+@import "chunk.section.scheme-colours";

@@ -1,0 +1,339 @@
+/*
+  Project: Personal Site
+  Author: Nicolas Telfer
+  Date: 30/092013
+*/
+/** IMPORTS  ************/
+/*
+  Import all Default Styles
+*/
+/*
+ * Variables
+ */
+/*
+ * Mixins
+ */
+/** SKEW  ***********/
+/** BORDER RADIUS ***********/
+/*
+ * Color Guide
+ */
+/** DEFAULTS  ***********/
+/** SECTIONS  ***********/
+/*
+ * Typography
+ */
+/* line 6, ../../../dev/sass/base/_typography.scss */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+}
+
+/** TYPO VARIATIONS ***********/
+/* line 12, ../../../dev/sass/base/_typography.scss */
+.lg-headline {
+  border: .12em solid #222;
+  font-size: 8em;
+  line-height: 1;
+  padding: .08em .08em 0;
+  text-transform: uppercase;
+}
+
+/* line 20, ../../../dev/sass/base/_typography.scss */
+.md-headline {
+  font-size: 4em;
+}
+
+/* line 24, ../../../dev/sass/base/_typography.scss */
+.sm-headline {
+  font-size: 2.5em;
+}
+
+/*
+ * Links and Buttons
+ */
+/* line 6, ../../../dev/sass/base/_links.scss */
+a, button {
+  outline: none;
+}
+
+/** Button Defaults ***********/
+/* line 11, ../../../dev/sass/base/_links.scss */
+.btn {
+  font-weight: bold;
+  padding: .8em 1.4em;
+}
+
+/*
+ * Set default styles to all chunks
+ */
+/** SECTIONS  **********/
+/* line 6, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.section {
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+
+/* line 11, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.skew {
+  -webkit-transform: skewY(-1deg);
+  -o-transform: skewY(-1deg);
+  -moz-transform: skewY(-1deg);
+  -ms-transform: skewY(-1deg);
+  transform: skewY(-1deg);
+}
+
+/* line 17, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.anim-img img {
+  max-width: 100%;
+}
+
+/* line 26, ../../../dev/sass/chunks/_chunks.defaults.scss */
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 32, ../../../dev/sass/chunks/_chunks.defaults.scss */
+section {
+  position: relative;
+  padding: 10em 10%;
+  background: #2980b9;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 40, ../../../dev/sass/chunks/_chunks.defaults.scss */
+section h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  font-weight: 400;
+}
+
+/* line 47, ../../../dev/sass/chunks/_chunks.defaults.scss */
+section p {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 1.3em;
+  line-height: 1.5;
+}
+
+/* line 54, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.text:first-child {
+  text-align: right;
+}
+
+/* line 58, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.text:nth-child(2) {
+  text-align: left;
+}
+
+/* line 63, ../../../dev/sass/chunks/_chunks.defaults.scss */
+section::before,
+section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+/* line 69, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-doublediagonal {
+  z-index: 1;
+  padding-top: 6em;
+  background: #2072a7;
+}
+
+/* line 76, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+  top: 0;
+  left: -25%;
+  z-index: -1;
+  width: 150%;
+  height: 75%;
+  background: inherit;
+  transform: rotate(-2deg);
+  transform-origin: 0 0;
+}
+
+/* line 87, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-doublediagonal::before {
+  height: 50%;
+  background: #116094;
+  transform: rotate(-3deg);
+  transform-origin: 3% 0;
+}
+
+/* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.col-2 .column {
+  width: 49%;
+}
+
+/* line 98, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.col-3 .column {
+  padding: 0 1%;
+  width: 32.8%;
+  text-align: center;
+}
+
+/* line 104, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.col-3 .column p {
+  padding: 1.4em;
+}
+
+/* line 108, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.column {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 113, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon {
+  border: .1em solid white;
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  text-align: center;
+  font-size: 8em;
+  line-height: 2em;
+  margin: 0 auto;
+}
+
+/* line 128, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.profile-thumb {
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 200px;
+  width: 20%;
+  overflow: hidden;
+}
+/* line 137, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.profile-thumb img {
+  width: 100%;
+}
+
+/** IMPORTS  **********/
+/*
+ * Section Top
+ */
+/* line 5, ../../../dev/sass/chunks/_chunk.section-top.scss */
+.section-top {
+  background-color: yellow;
+}
+
+/*
+ * Chunk for main banner area
+ * Here is shown my profile pic and access to twitter
+ */
+/* line 6, ../../../dev/sass/chunks/_chunk.section-banner.scss */
+.section-banner {
+  background-color: green;
+}
+
+/*
+ * Colour Scheme for each section
+ */
+/* line 6, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-1 {
+  background-color: #e17150;
+}
+
+/* line 10, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-2 {
+  background-color: #27a4a4;
+}
+
+/* line 14, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-3 {
+  background-color: #25c8e1;
+}
+
+/* line 18, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-4 {
+  background-color: #f2b366;
+}
+
+/* line 22, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-5 {
+  background-color: #8ce1c0;
+}
+
+/* line 26, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-6 {
+  background-color: #5e5e5d;
+}
+
+/* line 11, ../../../dev/sass/main-styles.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../../../dev/sass/main-styles.scss */
+html {
+  overflow-y: scroll;
+  /* always force a scrollbar in non-IE */
+}
+
+/* line 20, ../../../dev/sass/main-styles.scss */
+body {
+  background: #2d6987;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* line 26, ../../../dev/sass/main-styles.scss */
+#wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+  /* line 34, ../../../dev/sass/main-styles.scss */
+  section {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 54em) {
+  /* line 41, ../../../dev/sass/main-styles.scss */
+  #wrapper {
+    width: 100%;
+  }
+
+  /* line 45, ../../../dev/sass/main-styles.scss */
+  .column {
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 51, ../../../dev/sass/main-styles.scss */
+  .text:first-child,
+  .text:nth-child(2) {
+    text-align: center;
+  }
+
+  /* line 55, ../../../dev/sass/main-styles.scss */
+  .icon {
+    margin: 0 auto;
+  }
+
+  /* line 59, ../../../dev/sass/main-styles.scss */
+  .col-2 .column:first-child .icon {
+    margin: 0 auto 50px;
+  }
+
+  /* line 63, ../../../dev/sass/main-styles.scss */
+  .col-2 .column:nth-child(2) .icon {
+    margin: 50px auto 0;
+  }
+}
