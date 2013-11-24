@@ -7,9 +7,181 @@
 /*
   Import all Default Styles
 */
-/*
+/**
  * Variables
- */
+ **/
+/**  TEXT OVERIDERS  ************/
+/* line 6, ../../../dev/sass/base/_variables.scss */
+.txt-trans {
+  text-transform: uppercase;
+}
+
+/* line 8, ../../../dev/sass/base/_variables.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 9, ../../../dev/sass/base/_variables.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 10, ../../../dev/sass/base/_variables.scss */
+.text-left {
+  text-align: left;
+}
+
+/**  MARGINS  ***********/
+/* line 15, ../../../dev/sass/base/_variables.scss */
+.man {
+  margin: 0px;
+}
+
+/* line 16, ../../../dev/sass/base/_variables.scss */
+.mtn {
+  margin-top: 0px;
+}
+
+/* line 17, ../../../dev/sass/base/_variables.scss */
+.mrn {
+  margin-right: 0px;
+}
+
+/* line 18, ../../../dev/sass/base/_variables.scss */
+.mbn {
+  margin-bottom: 0px;
+}
+
+/* line 19, ../../../dev/sass/base/_variables.scss */
+.mln {
+  margin-left: 0px;
+}
+
+/* line 22, ../../../dev/sass/base/_variables.scss */
+.mas {
+  margin: 5px;
+}
+
+/* line 23, ../../../dev/sass/base/_variables.scss */
+.mts {
+  margin-top: 5px;
+}
+
+/* line 24, ../../../dev/sass/base/_variables.scss */
+.mrs {
+  margin-right: 5px;
+}
+
+/* line 25, ../../../dev/sass/base/_variables.scss */
+.mbs {
+  margin-bottom: 5px;
+}
+
+/* line 26, ../../../dev/sass/base/_variables.scss */
+.mls {
+  margin-left: 5px;
+}
+
+/* line 29, ../../../dev/sass/base/_variables.scss */
+.mam {
+  margin: 10px;
+}
+
+/* line 30, ../../../dev/sass/base/_variables.scss */
+.mtm {
+  margin-top: 10px;
+}
+
+/* line 31, ../../../dev/sass/base/_variables.scss */
+.mrm {
+  margin-right: 10px;
+}
+
+/* line 32, ../../../dev/sass/base/_variables.scss */
+.mbm {
+  margin-bottom: 10px;
+}
+
+/* line 33, ../../../dev/sass/base/_variables.scss */
+.mlm {
+  margin-left: 10px;
+}
+
+/* line 36, ../../../dev/sass/base/_variables.scss */
+.maml {
+  margin: 20px;
+}
+
+/* line 37, ../../../dev/sass/base/_variables.scss */
+.mtml {
+  margin-top: 20px;
+}
+
+/* line 38, ../../../dev/sass/base/_variables.scss */
+.mrml {
+  margin-right: 20px;
+}
+
+/* line 39, ../../../dev/sass/base/_variables.scss */
+.mbml {
+  margin-bottom: 20px;
+}
+
+/* line 40, ../../../dev/sass/base/_variables.scss */
+.mlml {
+  margin-left: 20px;
+}
+
+/* line 43, ../../../dev/sass/base/_variables.scss */
+.mal {
+  margin: 30px;
+}
+
+/* line 44, ../../../dev/sass/base/_variables.scss */
+.mtl {
+  margin-top: 30px;
+}
+
+/* line 45, ../../../dev/sass/base/_variables.scss */
+.mrl {
+  margin-right: 30px;
+}
+
+/* line 46, ../../../dev/sass/base/_variables.scss */
+.mbl {
+  margin-bottom: 30px;
+}
+
+/* line 47, ../../../dev/sass/base/_variables.scss */
+.mll {
+  margin-left: 30px;
+}
+
+/* line 50, ../../../dev/sass/base/_variables.scss */
+.malr {
+  margin: 40px;
+}
+
+/* line 51, ../../../dev/sass/base/_variables.scss */
+.mtlr {
+  margin-top: 40px;
+}
+
+/* line 52, ../../../dev/sass/base/_variables.scss */
+.mrlr {
+  margin-right: 40px;
+}
+
+/* line 53, ../../../dev/sass/base/_variables.scss */
+.mblr {
+  margin-bottom: 40px;
+}
+
+/* line 54, ../../../dev/sass/base/_variables.scss */
+.mllr {
+  margin-left: 40px;
+}
+
 /*
  * Mixins
  */
@@ -20,6 +192,59 @@
  */
 /** DEFAULTS  ***********/
 /** SECTIONS  ***********/
+/** FONT STYLE: Lato  ***********************/
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-bold-webfont.eot"), url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-bolditalic-webfont.eot"), url("../fonts/lato-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bolditalic-webfont.ttf") format("truetype"), url("../fonts/lato-bolditalic-webfont.woff") format("woff"), url("../fonts/lato-bolditalic-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-italic-webfont.eot"), url("../fonts/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-italic-webfont.ttf") format("truetype"), url("../fonts/lato-italic-webfont.woff") format("woff"), url("../fonts/lato-italic-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-regular-webfont.eot"), url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** FONT STYLE: Roboto Bold  ***********************/
+@font-face {
+  font-family: 'robotoBold';
+  src: url("../fonts/roboto-bold-webfont.eot"), url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/** FONT STYLE: Roboto Light  ***********************/
+@font-face {
+  font-family: 'robotoLight';
+  src: url("../fonts/roboto-light-webfont.eot"), url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.svg") format("svg");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/** FONT STYLE: Ostrich  ***********************/
+@font-face {
+  font-family: 'ostrichBold';
+  src: url("../fonts/ostrich-bold.eot"), url("../fonts/ostrich-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-bold.ttf") format("truetype"), url("../fonts/ostrich-bold.woff") format("woff"), url("../fonts/ostrich-bold.svg") format("svg");
+  font-weight: lighter;
+  font-style: normal;
+}
+
 /*
  * Typography
  */
@@ -31,22 +256,34 @@ h1, h2, h3, h4, h5 {
 
 /** TYPO VARIATIONS ***********/
 /* line 12, ../../../dev/sass/base/_typography.scss */
-.lg-headline {
-  border: .12em solid #222;
-  font-size: 8em;
+.headline-l {
+  font-size: 4em;
   line-height: 1;
   padding: .08em .08em 0;
   text-transform: uppercase;
 }
 
-/* line 20, ../../../dev/sass/base/_typography.scss */
+/* line 19, ../../../dev/sass/base/_typography.scss */
 .md-headline {
   font-size: 4em;
 }
 
-/* line 24, ../../../dev/sass/base/_typography.scss */
+/* line 23, ../../../dev/sass/base/_typography.scss */
 .sm-headline {
   font-size: 2.5em;
+}
+
+/** HEADLINE TYPE ONE  ********/
+/* line 28, ../../../dev/sass/base/_typography.scss */
+.headline-type-one {
+  color: #eae3dc;
+  font-family: "ostrichBold", Helvetica, Arial;
+  text-transform: uppercase;
+}
+
+/* line 36, ../../../dev/sass/base/_typography.scss */
+.scheme-colour-2 h2 {
+  color: #2b3040;
 }
 
 /*
@@ -100,7 +337,7 @@ a, button {
 /* line 32, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section {
   position: relative;
-  padding: 10em 10%;
+  padding: 7em 10%;
   background: #2980b9;
   color: #fff;
   text-align: center;
@@ -180,18 +417,25 @@ section::after {
 }
 
 /* line 104, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.col-4 .column {
+  padding: 0 1%;
+  width: 24.6%;
+  text-align: center;
+}
+
+/* line 110, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .col-3 .column p {
   padding: 1.4em;
 }
 
-/* line 108, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 114, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .column {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 113, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.icon {
+/* line 119, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon, .icon-small {
   border: .1em solid white;
   display: block;
   width: 2em;
@@ -205,19 +449,32 @@ section::after {
   margin: 0 auto;
 }
 
-/* line 128, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.profile-thumb {
-  background: white;
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 200px;
-  width: 20%;
+/* line 133, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon-small {
+  border-width: 0.05em;
+  height: .7em;
+  width: .7em;
+  margin-bottom: 0px;
+}
+
+/* line 141, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon-image {
   overflow: hidden;
 }
-/* line 137, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 143, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon-image img {
+  max-width: 100%;
+  vertical-align: top;
+}
+
+/* line 150, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.profile-thumb {
+  background: white;
+  overflow: hidden;
+}
+/* line 154, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .profile-thumb img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /** IMPORTS  **********/
@@ -243,54 +500,94 @@ section::after {
  */
 /* line 6, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-1 {
-  background-color: #e17150;
+  background-color: #d95253;
 }
 
 /* line 10, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-2 {
-  background-color: #27a4a4;
+  background-color: #e5e1dd;
 }
 
 /* line 14, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-3 {
-  background-color: #25c8e1;
+  background-color: #7ec09a;
 }
 
 /* line 18, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-4 {
-  background-color: #f2b366;
+  background-color: #676951;
 }
 
 /* line 22, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-5 {
-  background-color: #8ce1c0;
+  background-color: #676951;
 }
 
 /* line 26, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-6 {
-  background-color: #5e5e5d;
+  background-color: #f4f2dd;
 }
 
-/* line 11, ../../../dev/sass/main-styles.scss */
+/* line 33, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.group-items li.group-item {
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: top;
+}
+/* line 37, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.group-items li.group-item a {
+  color: #2b3040;
+}
+/* line 39, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.group-items li.group-item a .title {
+  display: block;
+  margin-top: 5px;
+}
+
+/*
+ * Butttons
+ */
+/* line 6, ../../../dev/sass/partials/_buttons.scss */
+.button {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: .8em 1em;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+}
+/* line 13, ../../../dev/sass/partials/_buttons.scss */
+.button:hover {
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+/* line 12, ../../../dev/sass/main-styles.scss */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* line 16, ../../../dev/sass/main-styles.scss */
+/* line 17, ../../../dev/sass/main-styles.scss */
 html {
   overflow-y: scroll;
   /* always force a scrollbar in non-IE */
 }
 
-/* line 20, ../../../dev/sass/main-styles.scss */
+/* line 21, ../../../dev/sass/main-styles.scss */
 body {
   background: #2d6987;
+  font-family: "lato", Helvetica, Arial;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* line 26, ../../../dev/sass/main-styles.scss */
+/* line 28, ../../../dev/sass/main-styles.scss */
 #wrapper {
   position: relative;
   margin: 0 auto;
@@ -299,41 +596,41 @@ body {
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  /* line 34, ../../../dev/sass/main-styles.scss */
+  /* line 36, ../../../dev/sass/main-styles.scss */
   section {
     font-size: 80%;
   }
 }
 @media screen and (max-width: 54em) {
-  /* line 41, ../../../dev/sass/main-styles.scss */
+  /* line 43, ../../../dev/sass/main-styles.scss */
   #wrapper {
     width: 100%;
   }
 
-  /* line 45, ../../../dev/sass/main-styles.scss */
+  /* line 47, ../../../dev/sass/main-styles.scss */
   .column {
     display: block;
     width: 100% !important;
   }
 
-  /* line 51, ../../../dev/sass/main-styles.scss */
+  /* line 53, ../../../dev/sass/main-styles.scss */
   .text:first-child,
   .text:nth-child(2) {
     text-align: center;
   }
 
-  /* line 55, ../../../dev/sass/main-styles.scss */
-  .icon {
+  /* line 57, ../../../dev/sass/main-styles.scss */
+  .icon, .icon-small {
     margin: 0 auto;
   }
 
-  /* line 59, ../../../dev/sass/main-styles.scss */
-  .col-2 .column:first-child .icon {
+  /* line 61, ../../../dev/sass/main-styles.scss */
+  .col-2 .column:first-child .icon, .col-2 .column:first-child .icon-small {
     margin: 0 auto 50px;
   }
 
-  /* line 63, ../../../dev/sass/main-styles.scss */
-  .col-2 .column:nth-child(2) .icon {
+  /* line 65, ../../../dev/sass/main-styles.scss */
+  .col-2 .column:nth-child(2) .icon, .col-2 .column:nth-child(2) .icon-small {
     margin: 50px auto 0;
   }
 }

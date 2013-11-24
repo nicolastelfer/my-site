@@ -1,0 +1,18 @@
+/*
+ * Butttons
+ */
+
+
+.button {
+	background: rgba(0,0,0, .2);
+	color: white;
+	padding: .8em 1em;
+	@include radius-all(7px);
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear;
+	&:hover {
+		color: white;
+		background: rgba(0,0,0, .4);
+		text-decoration: none;
+	}
+}

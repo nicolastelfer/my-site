@@ -31,7 +31,7 @@
 
 section {
 	position: relative;
-	padding: 10em 10%;
+	padding: 7em 10%;
 	background: #2980b9;
 	color: #fff;
 	text-align: center;
@@ -101,6 +101,12 @@ section::after {
 	text-align: center;
 }
 
+.col-4 .column {
+	padding: 0 1%;
+	width: 24.6%;
+	text-align: center;
+}
+
 .col-3 .column p {
 	padding: 1.4em;
 }
@@ -124,18 +130,29 @@ section::after {
 	margin: 0 auto;
 }
 
+.icon-small {
+	@extend .icon;
+	border-width: 0.05em;
+	height: .7em;
+	width: .7em;
+	margin-bottom: 0px;
+}
+
+.icon-image {
+	overflow: hidden;
+	img {
+		max-width: 100%;
+		vertical-align: top;
+	}
+}
+
 
 .profile-thumb {
 	background: white;
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 200px;
-	width: 20%;
 	overflow: hidden;
 
 	img {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 

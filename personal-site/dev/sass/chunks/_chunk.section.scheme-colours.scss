@@ -26,3 +26,20 @@
 .scheme-colour-6 {
 	background-color: $scheme-color-six;
 }
+
+
+
+.group-items {
+	li.group-item {
+		display: inline-block;
+		margin-left: 1em;
+		vertical-align: top;
+		a {
+			color:  #2b3040;
+			.title {
+				display: block;
+				margin-top: 5px;
+			}
+		}
+	}
+}

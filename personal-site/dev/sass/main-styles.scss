@@ -7,6 +7,7 @@
 /** IMPORTS  ************/
 @import "base/base.defaults";
 @import "chunks/chunks.defaults";
+@import "partials/partials.default";
 
 html, body {
   margin: 0;
@@ -19,6 +20,7 @@ html {
 
 body {
   background: #2d6987;
+	font-family: $bodyFont;
   padding: 0;
   overflow-x: hidden;
 }
