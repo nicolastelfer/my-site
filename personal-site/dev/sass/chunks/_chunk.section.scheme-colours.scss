@@ -4,42 +4,50 @@
 
 
 .scheme-colour-1 {
-	background-color: $scheme-color-one;
+  background-color: $scheme-color-one;
+  color: $text-scheme-colour-three;
 }
 
 .scheme-colour-2 {
-	background-color: $scheme-color-two;
+  background-color: $scheme-color-two;
+  color: $text-scheme-colour-one;
+
 }
 
 .scheme-colour-3 {
-	background-color: $scheme-color-three;
+  background-color: $scheme-color-three;
+  color: $text-scheme-colour-four;
+
+  p {
+    color: $text-scheme-colour-one;
+  }
 }
 
 .scheme-colour-4 {
-	background-color: $scheme-color-four;
+  background-color: $scheme-color-four;
 }
 
 .scheme-colour-5 {
-	background-color: $scheme-color-five;
+  background-color: $scheme-color-five;
 }
 
 .scheme-colour-6 {
-	background-color: $scheme-color-six;
+  background-color: $scheme-color-six;
 }
 
 
 
 .group-items {
-	li.group-item {
-		display: inline-block;
-		margin-left: 1em;
-		vertical-align: top;
-		a {
-			color:  #2b3040;
-			.title {
-				display: block;
-				margin-top: 5px;
-			}
-		}
-	}
+  li.group-item {
+    display: inline-block;
+    margin-left: 1em;
+    vertical-align: top;
+    a {
+      color:  #2b3040;
+      .title {
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
 }

@@ -9,6 +9,33 @@ a, button {
 
 /** Button Defaults ***********/
 .btn {
+  border:0;
   font-weight: bold;
   padding: .8em 1.4em;
+  transition: all .2s linear;
+
+  &.btn-primary {
+    background-color: $text-scheme-colour-four;
+    color: $base-color-light;
+
+    &:hover {
+      background-color: $text-scheme-colour-one;
+      opacity: .8;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $text-scheme-colour-four;
+    color: $base-color-light;
+    padding: .1em .5em;
+
+    &:hover {
+      background-color: $text-scheme-colour-one;
+      opacity: .8;
+    }
+  }
+
+  &.btn-email {
+
+  }
 }

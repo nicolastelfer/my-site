@@ -7,24 +7,30 @@
 $base-color-light: #ffffff;
 $base-color-dark: #000000;
 
+/** TEXT COLOURS  *********/
+$text-scheme-colour-one: #2c2420;
+$text-scheme-colour-two: #53473d;
+$text-scheme-colour-three: $base-color-light;
+$text-scheme-colour-four: #e5c056;
+
 /** SECTIONS  ***********/
-$scheme-color-one: #d95253;
+$scheme-color-one: #69b396;
 $scheme-color-one-light: red;
 $scheme-color-one-dark: red;
 
-$scheme-color-two: #e5e1dd;
+$scheme-color-two: #f9f2e0;
 $scheme-color-two-light: green;
 $scheme-color-two-dark: green;
 
-$scheme-color-three: #7ec09a;
+$scheme-color-three: $base-color-light;
 $scheme-color-three-light: yellow;
 $scheme-color-three-dark: yellow;
 
-$scheme-color-four: #676951;
+$scheme-color-four: #f6f8d8;
 $scheme-color-four-light: blue;
 $scheme-color-four-dark: blue;
 
-$scheme-color-five: #676951;
+$scheme-color-five: #cf4b1c;
 $scheme-color-five-light: pink;
 $scheme-color-five-dark: pink;
 
