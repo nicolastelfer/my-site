@@ -498,47 +498,50 @@ section::after {
 /*
  * Colour Scheme for each section
  */
-/* line 6, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* Pass a comma separated list of backgrounds: */
+/* Animate the positions of both of the backgrounds */
+/* line 12, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-1 {
-  background-color: #d95253;
+  background: linear-gradient(to bottom, #8dd2d9, #58c0c7);
 }
 
-/* line 10, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 17, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-2 {
   background-color: #e5e1dd;
+  background: repeating-linear-gradient(0deg, #de9dd4, #de9dd4 1px, white 1px, white 2px);
 }
 
-/* line 14, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 22, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-3 {
   background-color: #7ec09a;
 }
 
-/* line 18, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 26, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-4 {
   background-color: #676951;
 }
 
-/* line 22, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 30, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-5 {
   background-color: #676951;
 }
 
-/* line 26, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 34, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-6 {
   background-color: #f4f2dd;
 }
 
-/* line 33, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 41, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item {
   display: inline-block;
   margin-left: 1em;
   vertical-align: top;
 }
-/* line 37, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 45, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a {
   color: #2b3040;
 }
-/* line 39, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 47, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a .title {
   display: block;
   margin-top: 5px;
