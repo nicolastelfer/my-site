@@ -8,11 +8,14 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+.headline {
+  margin-bottom: .5em;
+}
+
 /** TYPO VARIATIONS ***********/
 .headline-l {
   font-size: 4em;
   line-height: 1;
-  padding: .08em .08em 0;
   text-transform: uppercase;
 }
 
@@ -24,17 +27,27 @@ h1, h2, h3, h4, h5 {
   font-size: 2.5em;
 }
 
+.lg-headline {
+  font-size: 5em;
+}
+
+.lr-headline {
+  font-size: 6em;
+}
+
 /** HEADLINE TYPE ONE  ********/
 .headline-type-one {
-	color: #eae3dc;
-	font-family: $ostrichBold;
-	text-transform: uppercase;
+  font-family: $robotoBold;
+}
+
+.headline-type-two {
+  font-family: $robotoLight;
 }
 
 .scheme-colour-2 {
 
-	h2 {
-		color: #2b3040;
-	}
+  h2 {
+    color: #2b3040;
+  }
 
 }

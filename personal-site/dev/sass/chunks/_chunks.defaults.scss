@@ -24,136 +24,117 @@
 *,
 *:after,
 *::before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 section {
-	position: relative;
-	padding: 7em 10%;
-	background: #2980b9;
-	color: #fff;
-	text-align: center;
+  position: relative;
+  padding: 7em 15%;
+  background: #2980b9;
+  color: #fff;
+  text-align: center;
+}
+
+.section-solid-border {
+  border-bottom: .2em solid $base-color-light;
 }
 
 section h2 {
-	margin: 0;
-	padding: 0;
-	font-size: 2.8em;
-	font-weight: 400;
+  margin: 0;
+  padding: 0;
+  font-size: 2.8em;
+  font-weight: 400;
 }
 
 section p {
-	color: rgba(0,0,0,.3);
-	font-size: 1.3em;
-	line-height: 1.5;
+  opacity: .8;
+  font-size: 1.3em;
+  line-height: 1.5;
 }
 
 
 .text:first-child {
-	text-align: right;
+  text-align: right;
 }
 
 .text:nth-child(2) {
-	text-align: left;
+  text-align: left;
 }
 
 section::before,
 section::after {
-	position: absolute;
-	content: '';
-	pointer-events: none;
+  position: absolute;
+  content: '';
+  pointer-events: none;
 }
 
-.ss-style-doublediagonal {
-	z-index: 1;
-	padding-top: 6em;
-	background: #2072a7;
-}
 
-.ss-style-doublediagonal::before,
-.ss-style-doublediagonal::after {
-	top: 0;
-	left: -25%;
-	z-index: -1;
-	width: 150%;
-	height: 75%;
-	background: inherit;
-	transform: rotate(-2deg);
-	transform-origin: 0 0;
-}
-
-.ss-style-doublediagonal::before {
-	height: 50%;
-	background: #116094;
-	transform: rotate(-3deg);
-	transform-origin: 3% 0;
-}
 
 .col-2 .column {
-	width: 49%;
+  width: 49%;
 }
 
 .col-3 .column {
-	padding: 0 1%;
-	width: 32.8%;
-	text-align: center;
+  padding: 0 1%;
+  width: 32.8%;
+  text-align: center;
 }
 
 .col-4 .column {
-	padding: 0 1%;
-	width: 24.6%;
-	text-align: center;
+  padding: 0 1%;
+  width: 24.6%;
+  text-align: center;
 }
 
 .col-3 .column p {
-	padding: 1.4em;
+  padding: 1.4em;
 }
 
 .column {
-	display: inline-block;
-	vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .icon {
-	border: .1em solid white;
-	display: block;
-	width: 2em;
-	height: 2em;
-	border-radius: 50%;
-	background: rgba(0,0,0,0.1);
-	color: #fff;
-	text-align: center;
-	font-size: 8em;
-	line-height: 2em;
-	margin: 0 auto;
+  border: .1em solid white;
+  display: block;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.1);
+  color: #fff;
+  text-align: center;
+  font-size: 8em;
+  line-height: 2em;
+  margin: 0 auto;
 }
 
 .icon-small {
-	@extend .icon;
-	border-width: 0.05em;
-	height: .7em;
-	width: .7em;
-	margin-bottom: 0px;
+  @extend .icon;
+  border-width: 0.05em;
+  height: .7em;
+  width: .7em;
+  margin-bottom: 0px;
 }
 
 .icon-image {
-	overflow: hidden;
-	img {
-		max-width: 100%;
-		vertical-align: top;
-	}
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    vertical-align: top;
+  }
 }
 
 
 .profile-thumb {
-	background: white;
-	overflow: hidden;
+  background: white;
+  overflow: hidden;
 
-	img {
-		max-width: 100%;
-	}
+  img {
+    max-width: 100%;
+  }
 }
 
 
@@ -161,3 +142,39 @@ section::after {
 @import "chunk.section-top";
 @import "chunk.section-banner";
 @import "chunk.section.scheme-colours";
+
+/* Triangles */
+.ss-style-triangles::before,
+.ss-style-triangles::after {
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+
+.ss-style-triangles::after {
+  bottom: -25px;
+  z-index: 10;
+  background: inherit;
+}
+
+/* Zig Zag (3d up and simple down) */
+.ss-style-zigzag::after {
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+}
+
+.ss-style-zigzag::after {
+  top: 100%;
+  background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, $scheme-color-one), color-stop(0.25, $scheme-color-one));
+  background-image:
+    linear-gradient(135deg, $scheme-color-one 25%, transparent 25%),
+    linear-gradient(225deg, $scheme-color-one 25%, transparent 25%);
+  background-position: 50%;
+}

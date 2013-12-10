@@ -20,49 +20,50 @@ html {
 
 body {
   background: #2d6987;
-	font-family: $bodyFont;
+  font-family: $bodyFont;
   padding: 0;
   overflow-x: hidden;
 }
 
 #wrapper {
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
+  background-color: $base-color-light;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
 }
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-	section {
-		font-size: 80%;
-	}
+  section {
+    font-size: 80%;
+  }
 }
 
 @media screen and (max-width: 54em) {
 
-	#wrapper {
-		width: 100%;
-	}
+  #wrapper {
+    width: 100%;
+  }
 
-	.column {
-		display: block;
-		width: 100% !important;
-	}
+  .column {
+    display: block;
+    width: 100% !important;
+  }
 
-	.text:first-child,
-	.text:nth-child(2) {
-		text-align: center;
-	}
+  .text:first-child,
+  .text:nth-child(2) {
+    text-align: center;
+  }
 
-	.icon {
-		margin: 0 auto;
-	}
+  .icon {
+    margin: 0 auto;
+  }
 
-	.col-2 .column:first-child .icon {
-		margin: 0 auto 50px;
-	}
+  .col-2 .column:first-child .icon {
+    margin: 0 auto 50px;
+  }
 
-	.col-2 .column:nth-child(2) .icon {
-		margin: 50px auto 0;
-	}
+  .col-2 .column:nth-child(2) .icon {
+    margin: 50px auto 0;
+  }
 }

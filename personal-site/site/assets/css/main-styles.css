@@ -191,6 +191,7 @@
  * Color Guide
  */
 /** DEFAULTS  ***********/
+/** TEXT COLOURS  *********/
 /** SECTIONS  ***********/
 /** FONT STYLE: Lato  ***********************/
 @font-face {
@@ -224,7 +225,7 @@
 /** FONT STYLE: Roboto Bold  ***********************/
 @font-face {
   font-family: 'robotoBold';
-  src: url("../fonts/roboto-bold-webfont.eot"), url("../fonts/roboto-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-bold-webfont.ttf") format("truetype"), url("../fonts/roboto-bold-webfont.woff") format("woff"), url("../fonts/roboto-bold-webfont.svg") format("svg");
+  src: url("../fonts/robotoslab-bold-webfont.eot"), url("../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/robotoslab-bold-webfont.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -232,7 +233,7 @@
 /** FONT STYLE: Roboto Light  ***********************/
 @font-face {
   font-family: 'robotoLight';
-  src: url("../fonts/roboto-light-webfont.eot"), url("../fonts/roboto-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/roboto-light-webfont.ttf") format("truetype"), url("../fonts/roboto-light-webfont.woff") format("woff"), url("../fonts/roboto-light-webfont.svg") format("svg");
+  src: url("../fonts/robotoslab-light-webfont.eot"), url("../fonts/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-light-webfont.ttf") format("truetype"), url("../fonts/robotoslab-light-webfont.woff") format("woff"), url("../fonts/robotoslab-light-webfont.svg") format("svg");
   font-weight: lighter;
   font-style: normal;
 }
@@ -254,34 +255,51 @@ h1, h2, h3, h4, h5 {
   padding: 0;
 }
 
+/* line 11, ../../../dev/sass/base/_typography.scss */
+.headline {
+  margin-bottom: .5em;
+}
+
 /** TYPO VARIATIONS ***********/
-/* line 12, ../../../dev/sass/base/_typography.scss */
+/* line 16, ../../../dev/sass/base/_typography.scss */
 .headline-l {
   font-size: 4em;
   line-height: 1;
-  padding: .08em .08em 0;
   text-transform: uppercase;
 }
 
-/* line 19, ../../../dev/sass/base/_typography.scss */
+/* line 22, ../../../dev/sass/base/_typography.scss */
 .md-headline {
   font-size: 4em;
 }
 
-/* line 23, ../../../dev/sass/base/_typography.scss */
+/* line 26, ../../../dev/sass/base/_typography.scss */
 .sm-headline {
   font-size: 2.5em;
 }
 
-/** HEADLINE TYPE ONE  ********/
-/* line 28, ../../../dev/sass/base/_typography.scss */
-.headline-type-one {
-  color: #eae3dc;
-  font-family: "ostrichBold", Helvetica, Arial;
-  text-transform: uppercase;
+/* line 30, ../../../dev/sass/base/_typography.scss */
+.lg-headline {
+  font-size: 5em;
 }
 
-/* line 36, ../../../dev/sass/base/_typography.scss */
+/* line 34, ../../../dev/sass/base/_typography.scss */
+.lr-headline {
+  font-size: 6em;
+}
+
+/** HEADLINE TYPE ONE  ********/
+/* line 39, ../../../dev/sass/base/_typography.scss */
+.headline-type-one {
+  font-family: "robotoBold", Helvetica, Arial;
+}
+
+/* line 43, ../../../dev/sass/base/_typography.scss */
+.headline-type-two {
+  font-family: "robotoLight", Helvetica, Arial;
+}
+
+/* line 49, ../../../dev/sass/base/_typography.scss */
 .scheme-colour-2 h2 {
   color: #2b3040;
 }
@@ -297,8 +315,31 @@ a, button {
 /** Button Defaults ***********/
 /* line 11, ../../../dev/sass/base/_links.scss */
 .btn {
+  border: 0;
   font-weight: bold;
   padding: .8em 1.4em;
+  transition: all .2s linear;
+}
+/* line 17, ../../../dev/sass/base/_links.scss */
+.btn.btn-primary {
+  background-color: #e5c056;
+  color: white;
+}
+/* line 21, ../../../dev/sass/base/_links.scss */
+.btn.btn-primary:hover {
+  background-color: #2c2420;
+  opacity: .8;
+}
+/* line 27, ../../../dev/sass/base/_links.scss */
+.btn.btn-secondary {
+  background-color: #e5c056;
+  color: white;
+  padding: .1em .5em;
+}
+/* line 32, ../../../dev/sass/base/_links.scss */
+.btn.btn-secondary:hover {
+  background-color: #2c2420;
+  opacity: .8;
 }
 
 /*
@@ -337,13 +378,18 @@ a, button {
 /* line 32, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section {
   position: relative;
-  padding: 7em 10%;
+  padding: 7em 15%;
   background: #2980b9;
   color: #fff;
   text-align: center;
 }
 
 /* line 40, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.section-solid-border {
+  border-bottom: 0.2em solid white;
+}
+
+/* line 44, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section h2 {
   margin: 0;
   padding: 0;
@@ -351,24 +397,24 @@ section h2 {
   font-weight: 400;
 }
 
-/* line 47, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 51, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section p {
-  color: rgba(0, 0, 0, 0.3);
+  opacity: .8;
   font-size: 1.3em;
   line-height: 1.5;
 }
 
-/* line 54, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 58, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .text:first-child {
   text-align: right;
 }
 
-/* line 58, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 62, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .text:nth-child(2) {
   text-align: left;
 }
 
-/* line 63, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 67, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section::before,
 section::after {
   position: absolute;
@@ -376,65 +422,37 @@ section::after {
   pointer-events: none;
 }
 
-/* line 69, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-doublediagonal {
-  z-index: 1;
-  padding-top: 6em;
-  background: #2072a7;
-}
-
-/* line 76, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-doublediagonal::before,
-.ss-style-doublediagonal::after {
-  top: 0;
-  left: -25%;
-  z-index: -1;
-  width: 150%;
-  height: 75%;
-  background: inherit;
-  transform: rotate(-2deg);
-  transform-origin: 0 0;
-}
-
-/* line 87, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-doublediagonal::before {
-  height: 50%;
-  background: #116094;
-  transform: rotate(-3deg);
-  transform-origin: 3% 0;
-}
-
-/* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 75, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .col-2 .column {
   width: 49%;
 }
 
-/* line 98, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 79, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .col-3 .column {
   padding: 0 1%;
   width: 32.8%;
   text-align: center;
 }
 
-/* line 104, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 85, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .col-4 .column {
   padding: 0 1%;
   width: 24.6%;
   text-align: center;
 }
 
-/* line 110, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 91, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .col-3 .column p {
   padding: 1.4em;
 }
 
-/* line 114, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 95, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .column {
   display: inline-block;
   vertical-align: top;
 }
 
-/* line 119, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 100, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon, .icon-small {
   border: .1em solid white;
   display: block;
@@ -449,7 +467,7 @@ section::after {
   margin: 0 auto;
 }
 
-/* line 133, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 114, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon-small {
   border-width: 0.05em;
   height: .7em;
@@ -457,22 +475,22 @@ section::after {
   margin-bottom: 0px;
 }
 
-/* line 141, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 122, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon-image {
   overflow: hidden;
 }
-/* line 143, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 124, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon-image img {
   max-width: 100%;
   vertical-align: top;
 }
 
-/* line 150, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 131, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .profile-thumb {
   background: white;
   overflow: hidden;
 }
-/* line 154, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 135, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .profile-thumb img {
   max-width: 100%;
 }
@@ -500,51 +518,99 @@ section::after {
  */
 /* Pass a comma separated list of backgrounds: */
 /* Animate the positions of both of the backgrounds */
-/* line 12, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 11, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-1 {
   background: linear-gradient(to bottom, #8dd2d9, #58c0c7);
 }
 
-/* line 17, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 16, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-2 {
-  background-color: #e5e1dd;
-  background: repeating-linear-gradient(0deg, #de9dd4, #de9dd4 1px, white 1px, white 2px);
+  background-color: #f9f2e0;
+  color: white;
 }
 
-/* line 22, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 21, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-2 {
+  background-color: #f9f2e0;
+  color: #2c2420;
+}
+
+/* line 27, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-3 {
-  background-color: #7ec09a;
+  background-color: white;
+  color: #e5c056;
+}
+/* line 31, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-3 p {
+  color: #2c2420;
 }
 
-/* line 26, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 36, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-4 {
-  background-color: #676951;
+  background-color: #f6f8d8;
 }
 
-/* line 30, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 40, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-5 {
-  background-color: #676951;
+  background-color: #cf4b1c;
 }
 
-/* line 34, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 44, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-6 {
   background-color: #f4f2dd;
 }
 
-/* line 41, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 51, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item {
   display: inline-block;
   margin-left: 1em;
   vertical-align: top;
 }
-/* line 45, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 55, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a {
   color: #2b3040;
 }
-/* line 47, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 57, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a .title {
   display: block;
   margin-top: 5px;
+}
+
+/* Triangles */
+/* line 148, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-triangles::before,
+.ss-style-triangles::after {
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+/* line 157, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-triangles::after {
+  bottom: -25px;
+  z-index: 10;
+  background: inherit;
+}
+
+/* Zig Zag (3d up and simple down) */
+/* line 164, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-zigzag::after {
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+}
+
+/* line 173, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.ss-style-zigzag::after {
+  top: 100%;
+  background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #69b396), color-stop(0.25, #69b396));
+  background-image: linear-gradient(135deg, #69b396 25%, transparent 25%), linear-gradient(225deg, #69b396 25%, transparent 25%);
+  background-position: 50%;
 }
 
 /*
@@ -592,6 +658,7 @@ body {
 
 /* line 28, ../../../dev/sass/main-styles.scss */
 #wrapper {
+  background-color: white;
   position: relative;
   margin: 0 auto;
   width: 100%;
@@ -599,40 +666,40 @@ body {
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  /* line 36, ../../../dev/sass/main-styles.scss */
+  /* line 37, ../../../dev/sass/main-styles.scss */
   section {
     font-size: 80%;
   }
 }
 @media screen and (max-width: 54em) {
-  /* line 43, ../../../dev/sass/main-styles.scss */
+  /* line 44, ../../../dev/sass/main-styles.scss */
   #wrapper {
     width: 100%;
   }
 
-  /* line 47, ../../../dev/sass/main-styles.scss */
+  /* line 48, ../../../dev/sass/main-styles.scss */
   .column {
     display: block;
     width: 100% !important;
   }
 
-  /* line 53, ../../../dev/sass/main-styles.scss */
+  /* line 54, ../../../dev/sass/main-styles.scss */
   .text:first-child,
   .text:nth-child(2) {
     text-align: center;
   }
 
-  /* line 57, ../../../dev/sass/main-styles.scss */
+  /* line 58, ../../../dev/sass/main-styles.scss */
   .icon, .icon-small {
     margin: 0 auto;
   }
 
-  /* line 61, ../../../dev/sass/main-styles.scss */
+  /* line 62, ../../../dev/sass/main-styles.scss */
   .col-2 .column:first-child .icon, .col-2 .column:first-child .icon-small {
     margin: 0 auto 50px;
   }
 
-  /* line 65, ../../../dev/sass/main-styles.scss */
+  /* line 66, ../../../dev/sass/main-styles.scss */
   .col-2 .column:nth-child(2) .icon, .col-2 .column:nth-child(2) .icon-small {
     margin: 50px auto 0;
   }
