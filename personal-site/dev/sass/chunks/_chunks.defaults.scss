@@ -143,6 +143,13 @@ section::after {
 @import "chunk.section-banner";
 @import "chunk.section.scheme-colours";
 
+
+.ss-pattern {
+	background-image: url(../img/bg-pattern.png);
+	background-repeat: repeat;
+	background-position: top left;
+}
+
 /* Triangles */
 .ss-style-triangles::before,
 .ss-style-triangles::after {
