@@ -59,3 +59,16 @@
   -ms-border-left-radius: $radius;
   border-left-radius: $radius;
 }
+
+
+/** GRADIENTS  ***********/
+@mixin gradient-style-1($colour1, $colour2) {
+	background: $colour1; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  $colour1 0%, $colour2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$colour1), color-stop(100%,$colour2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  $colour1 0%,$colour2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  $colour1 0%,$colour2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  $colour1 0%,$colour2 100%); /* IE10+ */
+	background: linear-gradient(135deg,  $colour1 0%,$colour2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$colour1', endColorstr='$colour2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}

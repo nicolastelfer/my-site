@@ -144,6 +144,13 @@ section::after {
 @import "chunk.section.scheme-colours";
 
 
+.fixed-section {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 25em;
+}
+
 .ss-pattern {
 	background-image: url(../img/bg-pattern.png);
 	background-repeat: repeat;
