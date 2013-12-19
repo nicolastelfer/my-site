@@ -9,7 +9,8 @@
 //transition:background-position 1s;
 
 .scheme-colour-1 {
-	@include gradient-style-1(#8dd2d9,#58c0c7);
+	color: #3c3c3e;
+	@include gradient-style-1(#fdfcfa,#eee5dc);
 }
 
 .scheme-colour-2 {

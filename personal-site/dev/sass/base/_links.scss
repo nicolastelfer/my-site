@@ -11,16 +11,21 @@ a, button {
 .btn {
   border:0;
   font-weight: bold;
-  padding: .8em 1.4em;
+  padding: 0 .3em;
+	vertical-align: inherit;
   transition: all .2s linear;
+	font-size: inherit;
+	line-height: inherit;
 
   &.btn-primary {
-    background-color: $text-scheme-colour-four;
-    color: $base-color-light;
+	background-color: transparent;
+    color: #B5A89D;
 
     &:hover {
-      background-color: $text-scheme-colour-one;
+		background-color: transparent;
+      color: $text-scheme-colour-one;
       opacity: .8;
+		text-decoration: underline;
     }
   }
 

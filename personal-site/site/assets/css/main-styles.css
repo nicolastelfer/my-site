@@ -318,26 +318,31 @@ a, button {
 .btn {
   border: 0;
   font-weight: bold;
-  padding: .8em 1.4em;
+  padding: 0 .3em;
+  vertical-align: inherit;
   transition: all .2s linear;
+  font-size: inherit;
+  line-height: inherit;
 }
-/* line 17, ../../../dev/sass/base/_links.scss */
+/* line 20, ../../../dev/sass/base/_links.scss */
 .btn.btn-primary {
-  background-color: #e5c056;
-  color: white;
+  background-color: transparent;
+  color: #B5A89D;
 }
-/* line 21, ../../../dev/sass/base/_links.scss */
+/* line 24, ../../../dev/sass/base/_links.scss */
 .btn.btn-primary:hover {
-  background-color: #2c2420;
+  background-color: transparent;
+  color: #2c2420;
   opacity: .8;
+  text-decoration: underline;
 }
-/* line 27, ../../../dev/sass/base/_links.scss */
+/* line 32, ../../../dev/sass/base/_links.scss */
 .btn.btn-secondary {
   background-color: #e5c056;
   color: white;
   padding: .1em .5em;
 }
-/* line 32, ../../../dev/sass/base/_links.scss */
+/* line 37, ../../../dev/sass/base/_links.scss */
 .btn.btn-secondary:hover {
   background-color: #2c2420;
   opacity: .8;
@@ -379,10 +384,9 @@ a, button {
 /* line 32, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section {
   position: relative;
-  padding: 7em 15%;
-  background: #2980b9;
-  color: #fff;
-  text-align: center;
+  padding: 3em 15%;
+  background: #fff;
+  color: #3c3c3e;
 }
 
 /* line 40, ../../../dev/sass/chunks/_chunks.defaults.scss */
@@ -521,25 +525,26 @@ section::after {
 /* Animate the positions of both of the backgrounds */
 /* line 11, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-1 {
-  background: #8dd2d9;
+  color: #3c3c3e;
+  background: #fdfcfa;
   /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #8dd2d9 0%, #58c0c7 100%);
+  background: -moz-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #8dd2d9), color-stop(100%, #58c0c7));
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fdfcfa), color-stop(100%, #eee5dc));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #8dd2d9 0%, #58c0c7 100%);
+  background: -webkit-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #8dd2d9 0%, #58c0c7 100%);
+  background: -o-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #8dd2d9 0%, #58c0c7 100%);
+  background: -ms-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
   /* IE10+ */
-  background: linear-gradient(135deg, #8dd2d9 0%, #58c0c7 100%);
+  background: linear-gradient(135deg, #fdfcfa 0%, #eee5dc 100%);
   /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$colour1', endColorstr='$colour2',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */
 }
 
-/* line 15, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 16, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-2 {
   background: #e1d2a2;
   /* Old browsers */
@@ -560,13 +565,13 @@ section::after {
   color: white;
 }
 
-/* line 20, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 21, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-2 {
   background-color: #f9f2e0;
   color: #2c2420;
 }
 
-/* line 26, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 27, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-3 {
   background: white;
   /* Old browsers */
@@ -586,37 +591,37 @@ section::after {
   /* IE6-9 fallback on horizontal gradient */
   color: #e5c056;
 }
-/* line 30, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 31, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-3 p {
   color: #2c2420;
 }
 
-/* line 35, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 36, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-4 {
   background-color: #f6f8d8;
 }
 
-/* line 39, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 40, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-5 {
   background-color: #cf4b1c;
 }
 
-/* line 43, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 44, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-6 {
   background-color: #f4f2dd;
 }
 
-/* line 50, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 51, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item {
   display: inline-block;
   margin-left: 1em;
   vertical-align: top;
 }
-/* line 54, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 55, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a {
   color: #2b3040;
 }
-/* line 56, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 57, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a .title {
   display: block;
   margin-top: 5px;
@@ -715,53 +720,78 @@ body {
   font-family: "lato", Helvetica, Arial;
   padding: 0;
   overflow-x: hidden;
+  position: relative;
+  z-index: 0;
 }
 
-/* line 28, ../../../dev/sass/main-styles.scss */
+/* line 30, ../../../dev/sass/main-styles.scss */
 #wrapper {
   background-color: white;
   position: relative;
+  z-index: 1;
   margin: 0 auto;
-  padding-top: 25em;
   width: 100%;
+}
+
+/* line 38, ../../../dev/sass/main-styles.scss */
+footer {
+  position: relative;
+  z-index: -2;
+  background-color: #31353a;
+  background-image: -webkit-linear-gradient(top, #31353a, #2f3337);
+  background-image: -moz-linear-gradient(top, #31353a, #2f3337);
+  background-image: linear-gradient(top, #31353a, #2f3337);
+  height: 20em;
+}
+/* line 49, ../../../dev/sass/main-styles.scss */
+footer .column {
+  color: white;
+  width: 100%;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  margin-left: -50%;
+  padding-bottom: 60px;
+  z-index: -1;
+  text-align: center;
 }
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  /* line 38, ../../../dev/sass/main-styles.scss */
+  /* line 64, ../../../dev/sass/main-styles.scss */
   section {
     font-size: 80%;
   }
 }
 @media screen and (max-width: 54em) {
-  /* line 45, ../../../dev/sass/main-styles.scss */
+  /* line 71, ../../../dev/sass/main-styles.scss */
   #wrapper {
     width: 100%;
   }
 
-  /* line 49, ../../../dev/sass/main-styles.scss */
+  /* line 75, ../../../dev/sass/main-styles.scss */
   .column {
     display: block;
     width: 100% !important;
   }
 
-  /* line 55, ../../../dev/sass/main-styles.scss */
+  /* line 81, ../../../dev/sass/main-styles.scss */
   .text:first-child,
   .text:nth-child(2) {
     text-align: center;
   }
 
-  /* line 59, ../../../dev/sass/main-styles.scss */
+  /* line 85, ../../../dev/sass/main-styles.scss */
   .icon, .icon-small {
     margin: 0 auto;
   }
 
-  /* line 63, ../../../dev/sass/main-styles.scss */
+  /* line 89, ../../../dev/sass/main-styles.scss */
   .col-2 .column:first-child .icon, .col-2 .column:first-child .icon-small {
     margin: 0 auto 50px;
   }
 
-  /* line 67, ../../../dev/sass/main-styles.scss */
+  /* line 93, ../../../dev/sass/main-styles.scss */
   .col-2 .column:nth-child(2) .icon, .col-2 .column:nth-child(2) .icon-small {
     margin: 50px auto 0;
   }

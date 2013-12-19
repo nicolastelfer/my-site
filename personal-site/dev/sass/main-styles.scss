@@ -10,61 +10,87 @@
 @import "partials/partials.default";
 
 html, body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  overflow-y: scroll; /* always force a scrollbar in non-IE */
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 
 body {
-  background: #2d6987;
-  font-family: $bodyFont;
-  padding: 0;
-  overflow-x: hidden;
+	background: #2d6987;
+	font-family: $bodyFont;
+	padding: 0;
+	overflow-x: hidden;
+	position: relative;
+	z-index: 0;
 }
 
 #wrapper {
-  background-color: $base-color-light;
-  position: relative;
-  margin: 0 auto;
-	padding-top: 25em;
-  width: 100%;
+	background-color: $base-color-light;
+	position:relative;
+	z-index:1;
+	margin: 0 auto;
+	width: 100%;
+}
+
+footer {
+	position:relative;
+	z-index:-2;
+
+	background-color:#31353a;
+
+	background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
+	background-image:-moz-linear-gradient(top, #31353a, #2f3337);
+	background-image:linear-gradient(top, #31353a, #2f3337);
+	height: 20em;
+
+	.column {
+		color: white;
+		width: 100%;
+		position: fixed;
+		left: 50%;
+		bottom: 0;
+		margin-left: -50%;
+		padding-bottom: 60px;
+		z-index: -1;
+		text-align: center;
+	}
 }
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  section {
-    font-size: 80%;
-  }
+	section {
+		font-size: 80%;
+	}
 }
 
 @media screen and (max-width: 54em) {
 
-  #wrapper {
-    width: 100%;
-  }
+	#wrapper {
+		width: 100%;
+	}
 
-  .column {
-    display: block;
-    width: 100% !important;
-  }
+	.column {
+		display: block;
+		width: 100% !important;
+	}
 
-  .text:first-child,
-  .text:nth-child(2) {
-    text-align: center;
-  }
+	.text:first-child,
+	.text:nth-child(2) {
+		text-align: center;
+	}
 
-  .icon {
-    margin: 0 auto;
-  }
+	.icon {
+		margin: 0 auto;
+	}
 
-  .col-2 .column:first-child .icon {
-    margin: 0 auto 50px;
-  }
+	.col-2 .column:first-child .icon {
+		margin: 0 auto 50px;
+	}
 
-  .col-2 .column:nth-child(2) .icon {
-    margin: 50px auto 0;
-  }
+	.col-2 .column:nth-child(2) .icon {
+		margin: 50px auto 0;
+	}
 }
