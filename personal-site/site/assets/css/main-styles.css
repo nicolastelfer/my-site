@@ -275,32 +275,37 @@ h1, h2, h3, h4, h5 {
 }
 
 /* line 26, ../../../dev/sass/base/_typography.scss */
+.xs-headline {
+  font-size: 1.5em;
+}
+
+/* line 30, ../../../dev/sass/base/_typography.scss */
 .sm-headline {
   font-size: 2.5em;
 }
 
-/* line 30, ../../../dev/sass/base/_typography.scss */
+/* line 34, ../../../dev/sass/base/_typography.scss */
 .lg-headline {
   font-size: 5em;
 }
 
-/* line 34, ../../../dev/sass/base/_typography.scss */
+/* line 38, ../../../dev/sass/base/_typography.scss */
 .lr-headline {
   font-size: 6em;
 }
 
 /** HEADLINE TYPE ONE  ********/
-/* line 39, ../../../dev/sass/base/_typography.scss */
+/* line 43, ../../../dev/sass/base/_typography.scss */
 .headline-type-one {
   font-family: "robotoBold", Helvetica, Arial;
 }
 
-/* line 43, ../../../dev/sass/base/_typography.scss */
+/* line 47, ../../../dev/sass/base/_typography.scss */
 .headline-type-two {
   font-family: "robotoLight", Helvetica, Arial;
 }
 
-/* line 49, ../../../dev/sass/base/_typography.scss */
+/* line 53, ../../../dev/sass/base/_typography.scss */
 .scheme-colour-2 h2 {
   color: #2b3040;
 }
@@ -716,7 +721,6 @@ html {
 
 /* line 21, ../../../dev/sass/main-styles.scss */
 body {
-  background: #2d6987;
   font-family: "lato", Helvetica, Arial;
   padding: 0;
   overflow-x: hidden;
@@ -724,7 +728,7 @@ body {
   z-index: 0;
 }
 
-/* line 30, ../../../dev/sass/main-styles.scss */
+/* line 29, ../../../dev/sass/main-styles.scss */
 #wrapper {
   background-color: white;
   position: relative;
@@ -733,7 +737,7 @@ body {
   width: 100%;
 }
 
-/* line 38, ../../../dev/sass/main-styles.scss */
+/* line 37, ../../../dev/sass/main-styles.scss */
 footer {
   position: relative;
   z-index: -2;
@@ -743,7 +747,7 @@ footer {
   background-image: linear-gradient(top, #31353a, #2f3337);
   height: 20em;
 }
-/* line 49, ../../../dev/sass/main-styles.scss */
+/* line 48, ../../../dev/sass/main-styles.scss */
 footer .column {
   color: white;
   width: 100%;
@@ -753,45 +757,58 @@ footer .column {
   margin-left: -50%;
   padding-bottom: 60px;
   z-index: -1;
+}
+/* line 57, ../../../dev/sass/main-styles.scss */
+footer .column .column-container {
   text-align: center;
 }
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  /* line 64, ../../../dev/sass/main-styles.scss */
+  /* line 66, ../../../dev/sass/main-styles.scss */
   section {
     font-size: 80%;
   }
 }
 @media screen and (max-width: 54em) {
-  /* line 71, ../../../dev/sass/main-styles.scss */
+  /* line 73, ../../../dev/sass/main-styles.scss */
   #wrapper {
     width: 100%;
   }
 
-  /* line 75, ../../../dev/sass/main-styles.scss */
+  /* line 77, ../../../dev/sass/main-styles.scss */
   .column {
     display: block;
     width: 100% !important;
   }
 
   /* line 81, ../../../dev/sass/main-styles.scss */
+  section {
+    padding: 3em 10%;
+  }
+
+  /* line 86, ../../../dev/sass/main-styles.scss */
+  footer .column-container {
+    padding: 1em 10%;
+  }
+
+  /* line 92, ../../../dev/sass/main-styles.scss */
   .text:first-child,
   .text:nth-child(2) {
     text-align: center;
   }
 
-  /* line 85, ../../../dev/sass/main-styles.scss */
+  /* line 96, ../../../dev/sass/main-styles.scss */
   .icon, .icon-small {
     margin: 0 auto;
   }
 
-  /* line 89, ../../../dev/sass/main-styles.scss */
+  /* line 100, ../../../dev/sass/main-styles.scss */
   .col-2 .column:first-child .icon, .col-2 .column:first-child .icon-small {
     margin: 0 auto 50px;
   }
 
-  /* line 93, ../../../dev/sass/main-styles.scss */
+  /* line 104, ../../../dev/sass/main-styles.scss */
   .col-2 .column:nth-child(2) .icon, .col-2 .column:nth-child(2) .icon-small {
     margin: 50px auto 0;
   }

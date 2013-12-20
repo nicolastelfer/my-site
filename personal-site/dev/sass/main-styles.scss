@@ -19,7 +19,6 @@ html {
 }
 
 body {
-	background: #2d6987;
 	font-family: $bodyFont;
 	padding: 0;
 	overflow-x: hidden;
@@ -55,7 +54,10 @@ footer {
 		margin-left: -50%;
 		padding-bottom: 60px;
 		z-index: -1;
-		text-align: center;
+		.column-container {
+
+			text-align: center;
+		}
 	}
 }
 
@@ -75,6 +77,15 @@ footer {
 	.column {
 		display: block;
 		width: 100% !important;
+	}
+	section {
+		padding: 3em 10%;
+	}
+
+	footer {
+		.column-container {
+			padding: 1em 10%;
+		}
 	}
 
 	.text:first-child,
