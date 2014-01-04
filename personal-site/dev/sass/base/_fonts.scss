@@ -3,8 +3,25 @@ $bodyFont: 'lato', Helvetica, Arial;
 $robotoBold: 'robotoBold', Helvetica, Arial;
 $robotoLight: 'robotoLight', Helvetica, Arial;
 $ostrichBold: 'ostrichBold', Helvetica, Arial;
+$merri: 'merri', Helvetica, Arial;
 
-/** FONT STYLE: Lato  ***********************/
+
+
+/** FONT STYLE: Merweather  ***********************/
+
+@font-face {
+  font-family: 'merri';
+  src:
+    url('../fonts/merriweather-black-webfont.eot'), /* IE */
+    url('../fonts/merriweather-black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/merriweather-black-webfont.ttf') format('truetype'),
+    url('../fonts/merriweather-black-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/merriweather-black-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+  /** FONT STYLE: Lato  ***********************/
 
 @font-face {
 	font-family: 'lato';
