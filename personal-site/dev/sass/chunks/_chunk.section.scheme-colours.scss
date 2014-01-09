@@ -9,40 +9,16 @@
 //transition:background-position 1s;
 
 .scheme-colour-1 {
-	color: #3c3c3e;
-	@include gradient-style-1(#fdfcfa,#eee5dc);
+	color: #fff;
+	background-color: #45a26e;
 }
 
 .scheme-colour-2 {
-	@include gradient-style-1(#e1d2a2,#ede2c6);
-	color: $text-scheme-colour-three;
-}
-
-.scheme-colour-2 {
-  background-color: $scheme-color-two;
-  color: $text-scheme-colour-one;
-
+	background: $scheme-color-two;
 }
 
 .scheme-colour-3 {
-	@include gradient-style-1(#ffffff,#eeeeed);
-	color: $text-scheme-colour-four;
-
-  p {
-    color: $text-scheme-colour-one;
-  }
-}
-
-.scheme-colour-4 {
-  background-color: $scheme-color-four;
-}
-
-.scheme-colour-5 {
-  background-color: $scheme-color-five;
-}
-
-.scheme-colour-6 {
-  background-color: $scheme-color-six;
+	background: $scheme-color-three;
 }
 
 

@@ -3,10 +3,6 @@
  */
 
 /** SECTIONS  **********/
-.section {
-  padding-bottom: 2em;
-  padding-top: 1em;
-}
 
 .skew {
   @include skew(-1deg);
@@ -17,6 +13,20 @@
   img {
     max-width: 100%;
   }
+}
+
+.column, .column-2 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.column {
+	width: 75%;
+}
+
+.column-2 {
+	padding-left: 4%;
+	width: 20%;
 }
 
 ////////
@@ -31,112 +41,41 @@
 
 section {
   position: relative;
-  padding: 3em 15%;
+  padding: 4em 12%;
   background: #fff;
   color: #3c3c3e;
 
 }
 
-.section-solid-border {
-  border-bottom: .2em solid $base-color-light;
-}
 
 section h2 {
   margin: 0;
   padding: 0;
   font-size: 2.8em;
-  font-weight: 400;
+  font-weight: bold;
 }
 
 section p {
+	color: #898989;
   opacity: .8;
-  font-size: 1.3em;
-  line-height: 1.5;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
-
-.text:first-child {
-  text-align: right;
-}
-
-.text:nth-child(2) {
-  text-align: left;
-}
-
-section::before,
-section::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
-
-
-.col-2 .column {
-  width: 49%;
-}
-
-.col-3 .column {
-  padding: 0 1%;
-  width: 32.8%;
-  text-align: center;
-}
-
-.col-4 .column {
-  padding: 0 1%;
-  width: 24.6%;
-  text-align: center;
-}
-
-.col-3 .column p {
-  padding: 1.4em;
-}
-
-.column {
-  display: inline-block;
-  vertical-align: top;
-}
 
 .icon {
-  border: .1em solid white;
-  display: block;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  background: rgba(0,0,0,0.1);
-  color: #fff;
-  text-align: center;
-  font-size: 8em;
-  line-height: 2em;
-  margin: 0 auto;
+	display: inline-block;
+	vertical-align: middle;
+	height: 12px;
+	width: 12px;
+	margin-right: .3em;
+
+	&.icon-twitter {
+		background: url(../img/icon-twitter.png) no-repeat left center transparent;
+		height: 15px;
+		width: 21px;
+	}
 }
-
-.icon-small {
-  @extend .icon;
-  border-width: 0.05em;
-  height: .7em;
-  width: .7em;
-  margin-bottom: 0px;
-}
-
-.icon-image {
-  overflow: hidden;
-  img {
-    max-width: 100%;
-    vertical-align: top;
-  }
-}
-
-
-.profile-thumb {
-  background: white;
-  overflow: hidden;
-
-  img {
-    max-width: 100%;
-  }
-}
-
 
 /** IMPORTS  **********/
 @import "chunk.section-top";
@@ -151,44 +90,3 @@ section::after {
 	height: 25em;
 }
 
-.ss-pattern {
-	background-image: url(../img/bg-pattern.png);
-	background-repeat: repeat;
-	background-position: top left;
-}
-
-/* Triangles */
-.ss-style-triangles::before,
-.ss-style-triangles::after {
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
-}
-
-
-.ss-style-triangles::after {
-  bottom: -25px;
-  z-index: 10;
-  background: inherit;
-}
-
-/* Zig Zag (3d up and simple down) */
-.ss-style-zigzag::after {
-  right: 0;
-  left: 0;
-  z-index: 10;
-  display: block;
-  height: 50px;
-  background-size: 50px 100%;
-}
-
-.ss-style-zigzag::after {
-  top: 100%;
-  background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, $scheme-color-one), color-stop(0.25, $scheme-color-one));
-  background-image:
-    linear-gradient(135deg, $scheme-color-one 25%, transparent 25%),
-    linear-gradient(225deg, $scheme-color-one 25%, transparent 25%);
-  background-position: 50%;
-}

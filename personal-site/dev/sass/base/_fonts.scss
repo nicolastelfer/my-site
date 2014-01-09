@@ -1,24 +1,36 @@
 
-$bodyFont: 'lato', Helvetica, Arial;
+$bodyFont: 'asap', Helvetica, Arial;
 $robotoBold: 'robotoBold', Helvetica, Arial;
 $robotoLight: 'robotoLight', Helvetica, Arial;
 $ostrichBold: 'ostrichBold', Helvetica, Arial;
-$merri: 'merri', Helvetica, Arial;
+$asap: 'asap', Helvetica, Arial;
 
 
 
-/** FONT STYLE: Merweather  ***********************/
+/** FONT STYLE: Asap  ***********************/
 
 @font-face {
-  font-family: 'merri';
+  font-family: 'asap';
   src:
-    url('../fonts/merriweather-black-webfont.eot'), /* IE */
-    url('../fonts/merriweather-black-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('../fonts/merriweather-black-webfont.ttf') format('truetype'),
-    url('../fonts/merriweather-black-webfont.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/merriweather-black-webfont.svg') format('svg');
+    url('../fonts/asap-bold-webfont.eot'), /* IE */
+    url('../fonts/asap-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/asap-bold-webfont.ttf') format('truetype'),
+    url('../fonts/asap-bold-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/asap-bold-webfont.svg') format('svg');
   font-weight: bold;
   font-style: normal;
+}
+
+@font-face {
+	font-family: 'asap';
+	src:
+		url('../fonts/asap-regular-webfont.eot'), /* IE */
+		url('../fonts/asap-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/asap-regular-webfont.ttf') format('truetype'),
+		url('../fonts/asap-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/asap-regular-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
   /** FONT STYLE: Lato  ***********************/

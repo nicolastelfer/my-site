@@ -194,11 +194,18 @@
 /** DEFAULTS  ***********/
 /** TEXT COLOURS  *********/
 /** SECTIONS  ***********/
-/** FONT STYLE: Merweather  ***********************/
+/** FONT STYLE: Asap  ***********************/
 @font-face {
-  font-family: 'merri';
-  src: url("../fonts/merriweather-black-webfont.eot"), url("../fonts/merriweather-black-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/merriweather-black-webfont.ttf") format("truetype"), url("../fonts/merriweather-black-webfont.woff") format("woff"), url("../fonts/merriweather-black-webfont.svg") format("svg");
+  font-family: 'asap';
+  src: url("../fonts/asap-bold-webfont.eot"), url("../fonts/asap-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/asap-bold-webfont.ttf") format("truetype"), url("../fonts/asap-bold-webfont.woff") format("woff"), url("../fonts/asap-bold-webfont.svg") format("svg");
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'asap';
+  src: url("../fonts/asap-regular-webfont.eot"), url("../fonts/asap-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/asap-regular-webfont.ttf") format("truetype"), url("../fonts/asap-regular-webfont.woff") format("woff"), url("../fonts/asap-regular-webfont.svg") format("svg");
+  font-weight: normal;
   font-style: normal;
 }
 
@@ -262,59 +269,75 @@
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+  font-family: "asap", Helvetica, Arial;
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
 }
 
-/* line 11, ../../../dev/sass/base/_typography.scss */
+/* line 14, ../../../dev/sass/base/_typography.scss */
 .headline {
-  margin-bottom: .5em;
+  margin-bottom: .2em;
 }
 
 /** TYPO VARIATIONS ***********/
-/* line 16, ../../../dev/sass/base/_typography.scss */
+/* line 19, ../../../dev/sass/base/_typography.scss */
 .headline-l {
-  font-size: 4em;
+  font-size: 3.5em;
   line-height: 1;
 }
 
-/* line 22, ../../../dev/sass/base/_typography.scss */
+/* line 25, ../../../dev/sass/base/_typography.scss */
 .md-headline {
-  font-size: 4em;
-}
-
-/* line 26, ../../../dev/sass/base/_typography.scss */
-.xs-headline {
-  font-size: 1.5em;
-}
-
-/* line 30, ../../../dev/sass/base/_typography.scss */
-.sm-headline {
   font-size: 2.5em;
 }
 
+/* line 29, ../../../dev/sass/base/_typography.scss */
+.xs-headline {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
 /* line 34, ../../../dev/sass/base/_typography.scss */
+.sm-headline {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+/* line 39, ../../../dev/sass/base/_typography.scss */
 .lg-headline {
   font-size: 5em;
 }
 
-/* line 38, ../../../dev/sass/base/_typography.scss */
+/* line 43, ../../../dev/sass/base/_typography.scss */
 .lr-headline {
   font-size: 6em;
 }
 
 /** HEADLINE TYPE ONE  ********/
-/* line 43, ../../../dev/sass/base/_typography.scss */
+/* line 48, ../../../dev/sass/base/_typography.scss */
 .headline-type-one {
-  font-family: "merri", Helvetica, Arial;
-}
-
-/* line 47, ../../../dev/sass/base/_typography.scss */
-.headline-type-two {
-  font-family: "merri", Helvetica, Arial;
+  font-family: "asap", Helvetica, Arial;
+  font-weight: bold;
 }
 
 /* line 53, ../../../dev/sass/base/_typography.scss */
-.scheme-colour-2 h2 {
-  color: #2b3040;
+.headline-type-two {
+  font-family: "asap", Helvetica, Arial;
+  color: #45a26e;
+  font-weight: bold;
+}
+
+/* line 59, ../../../dev/sass/base/_typography.scss */
+.sub-headline {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #898989;
+  margin-bottom: 1em;
+}
+
+/* line 66, ../../../dev/sass/base/_typography.scss */
+.headline-dark {
+  color: #384c36;
 }
 
 /*
@@ -360,17 +383,31 @@ a, button {
   opacity: .8;
 }
 
+/* line 49, ../../../dev/sass/base/_links.scss */
+.link-inline {
+  font-weight: bold;
+  color: #45A26E;
+}
+/* line 52, ../../../dev/sass/base/_links.scss */
+.link-inline:hover {
+  color: #2f8555;
+  text-decoration: none;
+}
+
+/* line 58, ../../../dev/sass/base/_links.scss */
+.link-light {
+  color: white;
+}
+/* line 60, ../../../dev/sass/base/_links.scss */
+.link-light:hover {
+  color: inherit;
+}
+
 /*
  * Set default styles to all chunks
  */
 /** SECTIONS  **********/
-/* line 6, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.section {
-  padding-bottom: 2em;
-  padding-top: 1em;
-}
-
-/* line 11, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 7, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .skew {
   -webkit-transform: skewY(-1deg);
   -o-transform: skewY(-1deg);
@@ -379,12 +416,29 @@ a, button {
   transform: skewY(-1deg);
 }
 
-/* line 17, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 13, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .anim-img img {
   max-width: 100%;
 }
 
-/* line 26, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 18, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.column, .column-2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* line 23, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.column {
+  width: 75%;
+}
+
+/* line 27, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.column-2 {
+  padding-left: 4%;
+  width: 20%;
+}
+
+/* line 36, ../../../dev/sass/chunks/_chunks.defaults.scss */
 *,
 *:after,
 *::before {
@@ -393,123 +447,43 @@ a, button {
   box-sizing: border-box;
 }
 
-/* line 32, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 42, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section {
   position: relative;
-  padding: 3em 15%;
+  padding: 4em 12%;
   background: #fff;
   color: #3c3c3e;
 }
 
-/* line 40, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.section-solid-border {
-  border-bottom: 0.2em solid white;
-}
-
-/* line 44, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 51, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section h2 {
   margin: 0;
   padding: 0;
   font-size: 2.8em;
-  font-weight: 400;
-}
-
-/* line 51, ../../../dev/sass/chunks/_chunks.defaults.scss */
-section p {
-  opacity: .8;
-  font-size: 1.3em;
-  line-height: 1.5;
+  font-weight: bold;
 }
 
 /* line 58, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.text:first-child {
-  text-align: right;
+section p {
+  color: #898989;
+  opacity: .8;
+  font-size: 1.2em;
+  line-height: 1.3em;
 }
 
-/* line 62, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.text:nth-child(2) {
-  text-align: left;
-}
-
-/* line 67, ../../../dev/sass/chunks/_chunks.defaults.scss */
-section::before,
-section::after {
-  position: absolute;
-  content: '';
-  pointer-events: none;
-}
-
-/* line 75, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.col-2 .column {
-  width: 49%;
-}
-
-/* line 79, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.col-3 .column {
-  padding: 0 1%;
-  width: 32.8%;
-  text-align: center;
-}
-
-/* line 85, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.col-4 .column {
-  padding: 0 1%;
-  width: 24.6%;
-  text-align: center;
-}
-
-/* line 91, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.col-3 .column p {
-  padding: 1.4em;
-}
-
-/* line 95, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.column {
+/* line 66, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
+  height: 12px;
+  width: 12px;
+  margin-right: .3em;
 }
-
-/* line 100, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.icon, .icon-small {
-  border: .1em solid white;
-  display: block;
-  width: 2em;
-  height: 2em;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.1);
-  color: #fff;
-  text-align: center;
-  font-size: 8em;
-  line-height: 2em;
-  margin: 0 auto;
-}
-
-/* line 114, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.icon-small {
-  border-width: 0.05em;
-  height: .7em;
-  width: .7em;
-  margin-bottom: 0px;
-}
-
-/* line 122, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.icon-image {
-  overflow: hidden;
-}
-/* line 124, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.icon-image img {
-  max-width: 100%;
-  vertical-align: top;
-}
-
-/* line 131, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.profile-thumb {
-  background: white;
-  overflow: hidden;
-}
-/* line 135, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.profile-thumb img {
-  max-width: 100%;
+/* line 73, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.icon.icon-twitter {
+  background: url(../img/icon-twitter.png) no-repeat left center transparent;
+  height: 15px;
+  width: 21px;
 }
 
 /** IMPORTS  **********/
@@ -537,158 +511,42 @@ section::after {
 /* Animate the positions of both of the backgrounds */
 /* line 11, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-1 {
-  color: #3c3c3e;
-  background: #fdfcfa;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #fdfcfa), color-stop(100%, #eee5dc));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #fdfcfa 0%, #eee5dc 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #fdfcfa 0%, #eee5dc 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$colour1', endColorstr='$colour2',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
+  color: #fff;
+  background-color: #45a26e;
 }
 
 /* line 16, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .scheme-colour-2 {
-  background: #e1d2a2;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, #e1d2a2 0%, #ede2c6 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #e1d2a2), color-stop(100%, #ede2c6));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, #e1d2a2 0%, #ede2c6 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, #e1d2a2 0%, #ede2c6 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, #e1d2a2 0%, #ede2c6 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #e1d2a2 0%, #ede2c6 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$colour1', endColorstr='$colour2',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  color: white;
+  background: #ecf6f0;
 }
 
-/* line 21, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
-.scheme-colour-2 {
-  background-color: #f9f2e0;
-  color: #2c2420;
+/* line 20, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+.scheme-colour-3 {
+  background: #2b7f50;
 }
 
 /* line 27, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
-.scheme-colour-3 {
-  background: white;
-  /* Old browsers */
-  background: -moz-linear-gradient(-45deg, white 0%, #eeeeed 100%);
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, white), color-stop(100%, #eeeeed));
-  /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(-45deg, white 0%, #eeeeed 100%);
-  /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(-45deg, white 0%, #eeeeed 100%);
-  /* Opera 11.10+ */
-  background: -ms-linear-gradient(-45deg, white 0%, #eeeeed 100%);
-  /* IE10+ */
-  background: linear-gradient(135deg, #ffffff 0%, #eeeeed 100%);
-  /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$colour1', endColorstr='$colour2',GradientType=1 );
-  /* IE6-9 fallback on horizontal gradient */
-  color: #e5c056;
-}
-/* line 31, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
-.scheme-colour-3 p {
-  color: #2c2420;
-}
-
-/* line 36, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
-.scheme-colour-4 {
-  background-color: #f6f8d8;
-}
-
-/* line 40, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
-.scheme-colour-5 {
-  background-color: #cf4b1c;
-}
-
-/* line 44, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
-.scheme-colour-6 {
-  background-color: #f4f2dd;
-}
-
-/* line 51, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item {
   display: inline-block;
   margin-left: 1em;
   vertical-align: top;
 }
-/* line 55, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 31, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a {
   color: #2b3040;
 }
-/* line 57, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
+/* line 33, ../../../dev/sass/chunks/_chunk.section.scheme-colours.scss */
 .group-items li.group-item a .title {
   display: block;
   margin-top: 5px;
 }
 
-/* line 147, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 86, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .fixed-section {
   position: fixed;
   width: 100%;
   top: 0;
   height: 25em;
-}
-
-/* line 154, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-pattern {
-  background-image: url(../img/bg-pattern.png);
-  background-repeat: repeat;
-  background-position: top left;
-}
-
-/* Triangles */
-/* line 162, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-triangles::before,
-.ss-style-triangles::after {
-  left: 50%;
-  width: 50px;
-  height: 50px;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-  transform: translateX(-50%) rotate(45deg);
-}
-
-/* line 171, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-triangles::after {
-  bottom: -25px;
-  z-index: 10;
-  background: inherit;
-}
-
-/* Zig Zag (3d up and simple down) */
-/* line 178, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-zigzag::after {
-  right: 0;
-  left: 0;
-  z-index: 10;
-  display: block;
-  height: 50px;
-  background-size: 50px 100%;
-}
-
-/* line 187, ../../../dev/sass/chunks/_chunks.defaults.scss */
-.ss-style-zigzag::after {
-  top: 100%;
-  background-image: -webkit-gradient(linear, 0 0, 300% 100%, color-stop(0.25, #69b396), color-stop(0.25, #69b396));
-  background-image: linear-gradient(135deg, #69b396 25%, transparent 25%), linear-gradient(225deg, #69b396 25%, transparent 25%);
-  background-position: 50%;
 }
 
 /*
@@ -728,7 +586,7 @@ html {
 
 /* line 21, ../../../dev/sass/main-styles.scss */
 body {
-  font-family: "lato", Helvetica, Arial;
+  font-family: "asap", Helvetica, Arial;
   padding: 0;
   overflow-x: hidden;
   position: relative;
@@ -748,75 +606,70 @@ body {
 footer {
   position: relative;
   z-index: -2;
-  background-color: #31353a;
-  background-image: -webkit-linear-gradient(top, #31353a, #2f3337);
-  background-image: -moz-linear-gradient(top, #31353a, #2f3337);
-  background-image: linear-gradient(top, #31353a, #2f3337);
-  height: 20em;
+  height: 32em;
 }
-/* line 48, ../../../dev/sass/main-styles.scss */
-footer .column {
+/* line 42, ../../../dev/sass/main-styles.scss */
+footer .footer-wrapper {
   color: white;
   width: 100%;
   position: fixed;
-  left: 50%;
+  left: 0;
   bottom: 0;
-  margin-left: -50%;
-  padding-bottom: 60px;
+  padding: 3em 10%;
   z-index: -1;
-}
-/* line 57, ../../../dev/sass/main-styles.scss */
-footer .column .column-container {
-  text-align: center;
 }
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  /* line 66, ../../../dev/sass/main-styles.scss */
+  /* line 61, ../../../dev/sass/main-styles.scss */
   section {
     font-size: 80%;
   }
 }
 @media screen and (max-width: 54em) {
-  /* line 73, ../../../dev/sass/main-styles.scss */
+  /* line 68, ../../../dev/sass/main-styles.scss */
   #wrapper {
     width: 100%;
   }
 
-  /* line 77, ../../../dev/sass/main-styles.scss */
+  /* line 72, ../../../dev/sass/main-styles.scss */
   .column {
     display: block;
     width: 100% !important;
   }
 
-  /* line 81, ../../../dev/sass/main-styles.scss */
+  /* line 76, ../../../dev/sass/main-styles.scss */
   section {
     padding: 3em 10%;
   }
 
-  /* line 86, ../../../dev/sass/main-styles.scss */
+  /* line 80, ../../../dev/sass/main-styles.scss */
+  footer {
+    padding: 3em 10%;
+  }
+  /* line 82, ../../../dev/sass/main-styles.scss */
   footer .column-container {
     padding: 1em 10%;
   }
 
-  /* line 92, ../../../dev/sass/main-styles.scss */
+  /* line 88, ../../../dev/sass/main-styles.scss */
   .text:first-child,
   .text:nth-child(2) {
     text-align: center;
   }
 
-  /* line 96, ../../../dev/sass/main-styles.scss */
-  .icon, .icon-small {
+  /* line 92, ../../../dev/sass/main-styles.scss */
+  .icon {
     margin: 0 auto;
   }
 
-  /* line 100, ../../../dev/sass/main-styles.scss */
-  .col-2 .column:first-child .icon, .col-2 .column:first-child .icon-small {
+  /* line 96, ../../../dev/sass/main-styles.scss */
+  .col-2 .column:first-child .icon {
     margin: 0 auto 50px;
   }
 
-  /* line 104, ../../../dev/sass/main-styles.scss */
-  .col-2 .column:nth-child(2) .icon, .col-2 .column:nth-child(2) .icon-small {
+  /* line 100, ../../../dev/sass/main-styles.scss */
+  .col-2 .column:nth-child(2) .icon {
     margin: 50px auto 0;
   }
 }
