@@ -5,6 +5,14 @@
 
 a, button {
   outline: none;
+  color: inherit;
+  &:hover {
+    color: inherit;
+  }
+}
+
+a{
+  font-weight: bold;
 }
 
 /** Button Defaults ***********/

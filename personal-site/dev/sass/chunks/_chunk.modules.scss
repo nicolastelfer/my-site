@@ -1,0 +1,27 @@
+/*
+ * Modules
+ */
+
+
+.module {
+  text-align: center;
+  margin: 3em 0 2em;
+
+  .module-section-image {
+    margin-bottom: 1em;
+    img {
+      max-height: 120px;
+    }
+  }
+
+  .module-section-title {
+    margin-bottom: .5em;
+    color: #898989;
+  }
+  .module-section-headline {
+    color: #45a26e;
+    .book-author {
+      margin-top: .3em;
+    }
+  }
+}

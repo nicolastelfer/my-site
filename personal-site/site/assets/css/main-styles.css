@@ -346,10 +346,20 @@ h1, h2, h3, h4, h5 {
 /* line 6, ../../../dev/sass/base/_links.scss */
 a, button {
   outline: none;
+  color: inherit;
+}
+/* line 9, ../../../dev/sass/base/_links.scss */
+a:hover, button:hover {
+  color: inherit;
+}
+
+/* line 14, ../../../dev/sass/base/_links.scss */
+a {
+  font-weight: bold;
 }
 
 /** Button Defaults ***********/
-/* line 11, ../../../dev/sass/base/_links.scss */
+/* line 19, ../../../dev/sass/base/_links.scss */
 .btn {
   border: 0;
   font-weight: bold;
@@ -359,46 +369,46 @@ a, button {
   font-size: inherit;
   line-height: inherit;
 }
-/* line 20, ../../../dev/sass/base/_links.scss */
+/* line 28, ../../../dev/sass/base/_links.scss */
 .btn.btn-primary {
   background-color: transparent;
   color: #B5A89D;
 }
-/* line 24, ../../../dev/sass/base/_links.scss */
+/* line 32, ../../../dev/sass/base/_links.scss */
 .btn.btn-primary:hover {
   background-color: transparent;
   color: #2c2420;
   opacity: .8;
   text-decoration: underline;
 }
-/* line 32, ../../../dev/sass/base/_links.scss */
+/* line 40, ../../../dev/sass/base/_links.scss */
 .btn.btn-secondary {
   background-color: #e5c056;
   color: white;
   padding: .1em .5em;
 }
-/* line 37, ../../../dev/sass/base/_links.scss */
+/* line 45, ../../../dev/sass/base/_links.scss */
 .btn.btn-secondary:hover {
   background-color: #2c2420;
   opacity: .8;
 }
 
-/* line 49, ../../../dev/sass/base/_links.scss */
+/* line 57, ../../../dev/sass/base/_links.scss */
 .link-inline {
   font-weight: bold;
   color: #45A26E;
 }
-/* line 52, ../../../dev/sass/base/_links.scss */
+/* line 60, ../../../dev/sass/base/_links.scss */
 .link-inline:hover {
   color: #2f8555;
   text-decoration: none;
 }
 
-/* line 58, ../../../dev/sass/base/_links.scss */
+/* line 66, ../../../dev/sass/base/_links.scss */
 .link-light {
   color: white;
 }
-/* line 60, ../../../dev/sass/base/_links.scss */
+/* line 68, ../../../dev/sass/base/_links.scss */
 .link-light:hover {
   color: inherit;
 }
@@ -471,7 +481,20 @@ section p {
   line-height: 1.3em;
 }
 
-/* line 66, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 65, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.update {
+  background-color: #45a26e;
+  color: #fff;
+  padding: .3em .5em;
+  font-size: 85%;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 73, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -479,7 +502,7 @@ section p {
   width: 12px;
   margin-right: .3em;
 }
-/* line 73, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 80, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon.icon-twitter {
   background: url(../img/icon-twitter.png) no-repeat left center transparent;
   height: 15px;
@@ -541,7 +564,37 @@ section p {
   margin-top: 5px;
 }
 
-/* line 86, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/*
+ * Modules
+ */
+/* line 6, ../../../dev/sass/chunks/_chunk.modules.scss */
+.module {
+  text-align: center;
+  margin: 3em 0 2em;
+}
+/* line 10, ../../../dev/sass/chunks/_chunk.modules.scss */
+.module .module-section-image {
+  margin-bottom: 1em;
+}
+/* line 12, ../../../dev/sass/chunks/_chunk.modules.scss */
+.module .module-section-image img {
+  max-height: 120px;
+}
+/* line 17, ../../../dev/sass/chunks/_chunk.modules.scss */
+.module .module-section-title {
+  margin-bottom: .5em;
+  color: #898989;
+}
+/* line 21, ../../../dev/sass/chunks/_chunk.modules.scss */
+.module .module-section-headline {
+  color: #45a26e;
+}
+/* line 23, ../../../dev/sass/chunks/_chunk.modules.scss */
+.module .module-section-headline .book-author {
+  margin-top: .3em;
+}
+
+/* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .fixed-section {
   position: fixed;
   width: 100%;
@@ -572,19 +625,112 @@ section p {
   text-decoration: none;
 }
 
-/* line 12, ../../../dev/sass/main-styles.scss */
+/* line 2, ../../../dev/sass/partials/_footer.scss */
+footer {
+  position: relative;
+  z-index: -2;
+  height: 28em;
+}
+/* line 7, ../../../dev/sass/partials/_footer.scss */
+footer .footer-wrapper {
+  color: white;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/* line 15, ../../../dev/sass/partials/_footer.scss */
+footer .footer-wrapper .footer-wrapper-container {
+  padding: 3em 12%;
+}
+
+/* line 23, ../../../dev/sass/partials/_footer.scss */
+.copyright-wrapper .column {
+  padding: 2em 12%;
+}
+
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+  /* line 4, ../../../dev/sass/media-queries/_media-queries.scss */
+  section {
+    font-size: 80%;
+  }
+
+  /* line 8, ../../../dev/sass/media-queries/_media-queries.scss */
+  footer {
+    height: 30em;
+  }
+}
+@media screen and (max-width: 54em) {
+  /* line 15, ../../../dev/sass/media-queries/_media-queries.scss */
+  #wrapper {
+    width: 100%;
+  }
+
+  /* line 19, ../../../dev/sass/media-queries/_media-queries.scss */
+  .column {
+    display: block;
+    width: 100% !important;
+  }
+
+  /* line 23, ../../../dev/sass/media-queries/_media-queries.scss */
+  section {
+    padding: 3em 10%;
+  }
+
+  /* line 27, ../../../dev/sass/media-queries/_media-queries.scss */
+  .column-2 {
+    width: 100%;
+  }
+
+  /* line 31, ../../../dev/sass/media-queries/_media-queries.scss */
+  footer {
+    height: 40em;
+  }
+  /* line 35, ../../../dev/sass/media-queries/_media-queries.scss */
+  footer .footer-wrapper .footer-wrapper-container {
+    padding: 3em 10%;
+  }
+  /* line 39, ../../../dev/sass/media-queries/_media-queries.scss */
+  footer .column-container {
+    padding: 1em 10%;
+  }
+
+  /* line 47, ../../../dev/sass/media-queries/_media-queries.scss */
+  .text:first-child,
+  .text:nth-child(2) {
+    text-align: center;
+  }
+
+  /* line 51, ../../../dev/sass/media-queries/_media-queries.scss */
+  .icon {
+    margin: 0 auto;
+  }
+
+  /* line 55, ../../../dev/sass/media-queries/_media-queries.scss */
+  .col-2 .column:first-child .icon {
+    margin: 0 auto 50px;
+  }
+
+  /* line 59, ../../../dev/sass/media-queries/_media-queries.scss */
+  .col-2 .column:nth-child(2) .icon {
+    margin: 50px auto 0;
+  }
+}
+/* line 13, ../../../dev/sass/main-styles.scss */
 html, body {
   margin: 0;
   padding: 0;
 }
 
-/* line 17, ../../../dev/sass/main-styles.scss */
+/* line 18, ../../../dev/sass/main-styles.scss */
 html {
   overflow-y: scroll;
   /* always force a scrollbar in non-IE */
 }
 
-/* line 21, ../../../dev/sass/main-styles.scss */
+/* line 22, ../../../dev/sass/main-styles.scss */
 body {
   font-family: "asap", Helvetica, Arial;
   padding: 0;
@@ -593,83 +739,11 @@ body {
   z-index: 0;
 }
 
-/* line 29, ../../../dev/sass/main-styles.scss */
+/* line 30, ../../../dev/sass/main-styles.scss */
 #wrapper {
   background-color: white;
   position: relative;
   z-index: 1;
   margin: 0 auto;
   width: 100%;
-}
-
-/* line 37, ../../../dev/sass/main-styles.scss */
-footer {
-  position: relative;
-  z-index: -2;
-  height: 32em;
-}
-/* line 42, ../../../dev/sass/main-styles.scss */
-footer .footer-wrapper {
-  color: white;
-  width: 100%;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  padding: 3em 10%;
-  z-index: -1;
-}
-
-/* Media Queries for the layout */
-@media screen and (max-width: 68em) {
-  /* line 61, ../../../dev/sass/main-styles.scss */
-  section {
-    font-size: 80%;
-  }
-}
-@media screen and (max-width: 54em) {
-  /* line 68, ../../../dev/sass/main-styles.scss */
-  #wrapper {
-    width: 100%;
-  }
-
-  /* line 72, ../../../dev/sass/main-styles.scss */
-  .column {
-    display: block;
-    width: 100% !important;
-  }
-
-  /* line 76, ../../../dev/sass/main-styles.scss */
-  section {
-    padding: 3em 10%;
-  }
-
-  /* line 80, ../../../dev/sass/main-styles.scss */
-  footer {
-    padding: 3em 10%;
-  }
-  /* line 82, ../../../dev/sass/main-styles.scss */
-  footer .column-container {
-    padding: 1em 10%;
-  }
-
-  /* line 88, ../../../dev/sass/main-styles.scss */
-  .text:first-child,
-  .text:nth-child(2) {
-    text-align: center;
-  }
-
-  /* line 92, ../../../dev/sass/main-styles.scss */
-  .icon {
-    margin: 0 auto;
-  }
-
-  /* line 96, ../../../dev/sass/main-styles.scss */
-  .col-2 .column:first-child .icon {
-    margin: 0 auto 50px;
-  }
-
-  /* line 100, ../../../dev/sass/main-styles.scss */
-  .col-2 .column:nth-child(2) .icon {
-    margin: 50px auto 0;
-  }
 }
