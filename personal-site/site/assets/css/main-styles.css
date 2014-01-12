@@ -582,7 +582,7 @@ section p {
 }
 /* line 17, ../../../dev/sass/chunks/_chunk.modules.scss */
 .module .module-section-title {
-  margin-bottom: .5em;
+  margin-bottom: .3em;
   color: #898989;
 }
 /* line 21, ../../../dev/sass/chunks/_chunk.modules.scss */
@@ -591,7 +591,7 @@ section p {
 }
 /* line 23, ../../../dev/sass/chunks/_chunk.modules.scss */
 .module .module-section-headline .book-author {
-  margin-top: .3em;
+  margin-top: .5em;
 }
 
 /* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
