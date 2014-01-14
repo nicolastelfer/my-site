@@ -465,7 +465,38 @@ section {
   color: #3c3c3e;
 }
 
-/* line 51, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 50, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.section-last {
+  position: relative;
+}
+/* line 52, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.section-last:before, .section-last:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+/* line 63, ../../../dev/sass/chunks/_chunks.defaults.scss */
+.section-last:after {
+  top: 100%;
+  left: 13%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: white;
+  border-width: 30px;
+  margin-left: -30px;
+}
+
+/* line 79, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section h2 {
   margin: 0;
   padding: 0;
@@ -473,15 +504,15 @@ section h2 {
   font-weight: bold;
 }
 
-/* line 58, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 86, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section p {
-  color: #898989;
+  color: #706e6e;
   opacity: .8;
   font-size: 1.2em;
   line-height: 1.3em;
 }
 
-/* line 65, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .update {
   background-color: #45a26e;
   color: #fff;
@@ -494,7 +525,7 @@ section p {
   border-radius: 3px;
 }
 
-/* line 73, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 102, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -502,7 +533,7 @@ section p {
   width: 12px;
   margin-right: .3em;
 }
-/* line 80, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 109, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon.icon-twitter {
   background: url(../img/icon-twitter.png) no-repeat left center transparent;
   height: 15px;
@@ -594,7 +625,7 @@ section p {
   margin-top: .5em;
 }
 
-/* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 123, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .fixed-section {
   position: fixed;
   width: 100%;
