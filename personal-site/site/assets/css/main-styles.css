@@ -439,16 +439,17 @@ a {
 
 /* line 23, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .column {
-  width: 75%;
+  padding-right: 8%;
+  width: 67%;
 }
 
-/* line 27, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 28, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .column-2 {
   padding-left: 4%;
   width: 20%;
 }
 
-/* line 36, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 37, ../../../dev/sass/chunks/_chunks.defaults.scss */
 *,
 *:after,
 *::before {
@@ -457,7 +458,7 @@ a {
   box-sizing: border-box;
 }
 
-/* line 42, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 43, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section {
   position: relative;
   padding: 4em 12%;
@@ -465,11 +466,11 @@ section {
   color: #3c3c3e;
 }
 
-/* line 50, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 51, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .section-last {
   position: relative;
 }
-/* line 52, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 53, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .section-last:before, .section-last:after {
   top: 100%;
   left: 50%;
@@ -480,7 +481,7 @@ section {
   position: absolute;
   pointer-events: none;
 }
-/* line 63, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 64, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .section-last:after {
   top: 100%;
   left: 13%;
@@ -496,7 +497,7 @@ section {
   margin-left: -30px;
 }
 
-/* line 79, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 80, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section h2 {
   margin: 0;
   padding: 0;
@@ -504,7 +505,7 @@ section h2 {
   font-weight: bold;
 }
 
-/* line 86, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 87, ../../../dev/sass/chunks/_chunks.defaults.scss */
 section p {
   color: #706e6e;
   opacity: .8;
@@ -512,7 +513,7 @@ section p {
   line-height: 1.3em;
 }
 
-/* line 94, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 95, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .update {
   background-color: #45a26e;
   color: #fff;
@@ -525,7 +526,7 @@ section p {
   border-radius: 3px;
 }
 
-/* line 102, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 103, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon {
   display: inline-block;
   vertical-align: middle;
@@ -533,7 +534,7 @@ section p {
   width: 12px;
   margin-right: .3em;
 }
-/* line 109, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 110, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon.icon-twitter {
   background: url(../img/icon-twitter.png) no-repeat left center transparent;
   height: 15px;
@@ -625,7 +626,7 @@ section p {
   margin-top: .5em;
 }
 
-/* line 123, ../../../dev/sass/chunks/_chunks.defaults.scss */
+/* line 124, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .fixed-section {
   position: fixed;
   width: 100%;
@@ -683,11 +684,6 @@ footer .footer-wrapper .footer-wrapper-container {
 
 /* Media Queries for the layout */
 @media screen and (max-width: 68em) {
-  /* line 4, ../../../dev/sass/media-queries/_media-queries.scss */
-  section {
-    font-size: 80%;
-  }
-
   /* line 8, ../../../dev/sass/media-queries/_media-queries.scss */
   footer {
     height: 30em;
@@ -707,49 +703,51 @@ footer .footer-wrapper .footer-wrapper-container {
 
   /* line 23, ../../../dev/sass/media-queries/_media-queries.scss */
   section {
+    font-size: 80%;
     padding: 3em 10%;
   }
 
-  /* line 27, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 28, ../../../dev/sass/media-queries/_media-queries.scss */
   .column-2 {
     width: 100%;
   }
 
-  /* line 31, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 32, ../../../dev/sass/media-queries/_media-queries.scss */
   footer {
     height: 40em;
   }
-  /* line 35, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 36, ../../../dev/sass/media-queries/_media-queries.scss */
   footer .footer-wrapper .footer-wrapper-container {
     padding: 3em 10%;
   }
-  /* line 39, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 40, ../../../dev/sass/media-queries/_media-queries.scss */
   footer .column-container {
     padding: 1em 10%;
   }
 
-  /* line 47, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 48, ../../../dev/sass/media-queries/_media-queries.scss */
   .text:first-child,
   .text:nth-child(2) {
     text-align: center;
   }
 
-  /* line 51, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 52, ../../../dev/sass/media-queries/_media-queries.scss */
   .icon {
     margin: 0 auto;
   }
 
-  /* line 55, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 56, ../../../dev/sass/media-queries/_media-queries.scss */
   .col-2 .column:first-child .icon {
     margin: 0 auto 50px;
   }
 
-  /* line 59, ../../../dev/sass/media-queries/_media-queries.scss */
+  /* line 60, ../../../dev/sass/media-queries/_media-queries.scss */
   .col-2 .column:nth-child(2) .icon {
     margin: 50px auto 0;
   }
 }
 /* line 13, ../../../dev/sass/main-styles.scss */
+∑
 html, body {
   margin: 0;
   padding: 0;
