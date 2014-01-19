@@ -1,3 +1,4 @@
+@charset "CP850";
 /*
   Project: Personal Site
   Author: Nicolas Telfer
@@ -493,8 +494,8 @@ section {
   pointer-events: none;
   border-color: rgba(136, 183, 213, 0);
   border-top-color: white;
-  border-width: 30px;
-  margin-left: -30px;
+  border-width: 20px;
+  margin-left: -20px;
 }
 
 /* line 80, ../../../dev/sass/chunks/_chunks.defaults.scss */
@@ -532,7 +533,7 @@ section p {
   vertical-align: middle;
   height: 12px;
   width: 12px;
-  margin-right: .3em;
+  margin-right: .5em;
 }
 /* line 110, ../../../dev/sass/chunks/_chunks.defaults.scss */
 .icon.icon-twitter {
