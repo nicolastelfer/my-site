@@ -25,3 +25,28 @@
     }
   }
 }
+
+
+// Selected Work List
+.selected-work {
+	padding: 0px;
+	li {
+		margin: 10px 0;
+		list-style: none;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+
+		@media screen and (min-width: 30em) {
+			width: 47%;
+		}
+
+		@media screen and (min-width: 56em) {
+			width: 32%;
+		}
+
+		span {
+			display: block;
+		}
+	}
+}

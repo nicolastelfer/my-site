@@ -5,7 +5,7 @@
 
 a, button {
   outline: none;
-  color: inherit;
+  color: #231f20;
   &:hover {
     color: inherit;
   }
@@ -56,9 +56,10 @@ a{
 
 .link-inline {
 	font-weight: bold;
-	color: #45A26E;
+	color: #5fc7cd;
+	text-decoration: underline;
 	&:hover {
-		color: #2f8555;
+		color: #5fc7cd;
 		text-decoration: none;
 	}
 }

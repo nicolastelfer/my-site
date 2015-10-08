@@ -11,50 +11,47 @@ h1, h2, h3, h4, h5 {
 	font-weight: normal;
 }
 
-.headline {
-	margin-bottom: .2em;
+h1 {
+	font-size: 45px;
 }
 
-/** TYPO VARIATIONS ***********/
-.headline-l {
-	font-size: 3.5em;
-	line-height: 1;
-	// text-transform: uppercase;
+h2 {
+	font-size: 30px;
 }
 
-.md-headline {
-	font-size: 2.5em;
+h3 {
+	font-size: 21px;
 }
 
-.xs-headline {
-	font-size: 1.5em;
-	font-weight: normal;
+h4 {
+	font-size: 18px;
 }
 
-.sm-headline {
-	font-size: 1.5em;
-	margin-bottom: 1em;
+section h2 {
+	margin: 0;
+	padding: 0;
 }
 
-.lg-headline {
-	font-size: 5em;
+section p {
+	color: #706e6e;
+	opacity: .8;
 }
 
-.lr-headline {
-	font-size: 6em;
-}
+
 
 /** HEADLINE TYPE ONE  ********/
 .headline-type-one {
+	color: #fff;
 	font-family: $asap;
 	font-weight: bold;
 }
 
 .headline-type-two {
 	font-family: $asap;
-	color: #45a26e;
+	color: #5fc7cd;
 	font-weight: bold;
 }
+
 
 .sub-headline {
 	font-size: 1.5em;
