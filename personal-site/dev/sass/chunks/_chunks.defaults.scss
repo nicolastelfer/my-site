@@ -3,22 +3,113 @@
  */
 
 /** SECTIONS  **********/
-.section {
-  padding-bottom: 2em;
-  padding-top: 1em;
-}
 
 .skew {
-  @include skew(-3deg);
+	@include skew(-1deg);
 }
 
 .anim-img {
 
-  img {
-    max-width: 100%;
-  }
+	img {
+		max-width: 100%;
+	}
+}
+
+.column, .column-2 {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.column {
+	padding-right: 8%;
+	width: 67%;
+}
+
+.column-2 {
+	padding-left: 4%;
+	width: 20%;
+}
+
+////////
+
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+section {
+	position: relative;
+	padding: 4em 12%;
+	background: #fff;
+	color: #3c3c3e;
+
+}
+
+.section-last {
+	position: relative;
+	&:before, &:after {
+		top: 100%;
+		left: 50%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&:after {
+		top: 100%;
+		left: 13%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+		border-color: rgba(136, 183, 213, 0);
+		border-top-color: $base-color-light;
+		border-width: 20px;
+		margin-left: -20px;
+	}
+}
+
+.update {
+	background-color:  #45a26e;
+	color: #fff;
+	padding: .3em .5em;
+	font-size: 85%;
+	@include radius-all(3px);
+}
+
+.icon {
+	display: inline-block;
+	vertical-align: middle;
+	height: 12px;
+	width: 12px;
+	margin-right: .5em;
+
+	&.icon-twitter {
+		background: url(../img/icon-twitter.png) no-repeat left center transparent;
+		height: 15px;
+		width: 21px;
+	}
 }
 
 /** IMPORTS  **********/
 @import "chunk.section-top";
 @import "chunk.section-banner";
+@import "chunk.section.scheme-colours";
+@import "chunk.modules";
+
+
+.fixed-section {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 25em;
+}
+

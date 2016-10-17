@@ -1,0 +1,127 @@
+
+$bodyFont: 'asap', Helvetica, Arial;
+$robotoBold: 'robotoBold', Helvetica, Arial;
+$robotoLight: 'robotoLight', Helvetica, Arial;
+$ostrichBold: 'ostrichBold', Helvetica, Arial;
+$asap: 'asap', Helvetica, Arial;
+
+
+
+/** FONT STYLE: Asap  ***********************/
+
+@font-face {
+  font-family: 'asap';
+  src:
+    url('../fonts/asap-bold-webfont.eot'), /* IE */
+    url('../fonts/asap-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/asap-bold-webfont.ttf') format('truetype'),
+    url('../fonts/asap-bold-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/asap-bold-webfont.svg') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: 'asap';
+	src:
+		url('../fonts/asap-regular-webfont.eot'), /* IE */
+		url('../fonts/asap-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/asap-regular-webfont.ttf') format('truetype'),
+		url('../fonts/asap-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/asap-regular-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+  /** FONT STYLE: Lato  ***********************/
+
+@font-face {
+	font-family: 'lato';
+	src:
+		url('../fonts/lato-bold-webfont.eot'), /* IE */
+		url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/lato-bold-webfont.ttf') format('truetype'),
+		url('../fonts/lato-bold-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/lato-bold-webfont.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'lato';
+	src:
+		url('../fonts/lato-bolditalic-webfont.eot'), /* IE */
+		url('../fonts/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/lato-bolditalic-webfont.ttf') format('truetype'),
+		url('../fonts/lato-bolditalic-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/lato-bolditalic-webfont.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'lato';
+	src:
+		url('../fonts/lato-italic-webfont.eot'), /* IE */
+		url('../fonts/lato-italic-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/lato-italic-webfont.ttf') format('truetype'),
+		url('../fonts/lato-italic-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/lato-italic-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'lato';
+	src:
+		url('../fonts/lato-regular-webfont.eot'), /* IE */
+		url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/lato-regular-webfont.ttf') format('truetype'),
+		url('../fonts/lato-regular-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/lato-regular-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/** FONT STYLE: Roboto Bold  ***********************/
+
+@font-face {
+	font-family: 'robotoBold';
+	src:
+		url('../fonts/robotoslab-bold-webfont.eot'), /* IE */
+		url('../fonts/robotoslab-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/robotoslab-bold-webfont.ttf') format('truetype'),
+		url('../fonts/robotoslab-bold-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/robotoslab-bold-webfont.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/** FONT STYLE: Roboto Light  ***********************/
+
+@font-face {
+	font-family: 'robotoLight';
+	src:
+		url('../fonts/robotoslab-light-webfont.eot'), /* IE */
+		url('../fonts/robotoslab-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/robotoslab-light-webfont.ttf') format('truetype'),
+		url('../fonts/robotoslab-light-webfont.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/robotoslab-light-webfont.svg') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+
+/** FONT STYLE: Ostrich  ***********************/
+
+@font-face {
+	font-family: 'ostrichBold';
+	src:
+		url('../fonts/ostrich-bold.eot'), /* IE */
+		url('../fonts/ostrich-bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		url('../fonts/ostrich-bold.ttf') format('truetype'),
+		url('../fonts/ostrich-bold.woff') format('woff'), /* Modern Browsers */
+		url('../fonts/ostrich-bold.svg') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+

@@ -1,3 +1,4 @@
+=======
 my-site
 =======
 
@@ -10,4 +11,4 @@ Also this repo is for the dev version of the site. Oncer this process
 has finsih I'll move into the staging site and implement the structure 
 and styles into a backend system.
 
-
+Thanks

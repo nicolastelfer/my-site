@@ -1,3 +1,54 @@
-/*
+/**
  * Variables
- */
+ **/
+
+/**  TEXT OVERIDERS  ************/
+.txt-trans {text-transform: uppercase;}
+
+.text-center { text-align: center;}
+.text-right { text-align: right;}
+.text-left { text-align: left;}
+
+/**  MARGINS  ***********/
+
+// No margins
+.man {margin: 0px;}
+.mtn {margin-top: 0px;}
+.mrn {margin-right: 0px;}
+.mbn {margin-bottom: 0px;}
+.mln {margin-left: 0px;}
+
+// Small margins
+.mas { margin: 5px; }
+.mts { margin-top: 5px; }
+.mrs { margin-right: 5px; }
+.mbs { margin-bottom: 5px; }
+.mls { margin-left: 5px; }
+
+// Medium margins
+.mam { margin: 10px; }
+.mtm { margin-top: 10px; }
+.mrm { margin-right: 10px; }
+.mbm { margin-bottom: 10px; }
+.mlm { margin-left: 10px; }
+
+// Medium/Large margins
+.maml { margin: 20px; }
+.mtml { margin-top: 20px; }
+.mrml { margin-right: 20px; }
+.mbml { margin-bottom: 20px; }
+.mlml { margin-left: 20px; }
+
+// Large margins
+.mal { margin: 30px; }
+.mtl { margin-top: 30px; }
+.mrl { margin-right: 30px; }
+.mbl { margin-bottom: 30px; }
+.mll { margin-left: 30px; }
+
+// Larger margins
+.malr { margin: 40px; }
+.mtlr { margin-top: 40px; }
+.mrlr { margin-right: 40px; }
+.mblr { margin-bottom: 40px; }
+.mllr { margin-left: 40px; }

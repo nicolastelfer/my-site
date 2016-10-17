@@ -7,22 +7,32 @@
 /** IMPORTS  ************/
 @import "base/base.defaults";
 @import "chunks/chunks.defaults";
+@import "partials/partials.default";
+@import "media-queries/media-queries";
+
 
 html, body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 html {
-  overflow-y: scroll; /* always force a scrollbar in non-IE */
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
 }
 
 body {
-  background: #2d6987;
-  padding: 0;
-  overflow-x: hidden;
+	font-family: $bodyFont;
+	padding: 0;
+	overflow-x: hidden;
+	position: relative;
+	z-index: 0;
+
 }
 
 #wrapper {
-  position: relative;
+	background-color: $base-color-light;
+	position:relative;
+	z-index:1;
+	margin: 0 auto;
+	width: 100%;
 }

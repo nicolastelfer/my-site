@@ -1,0 +1,544 @@
+/*
+  Project: Personal Site
+  Author: Nicolas Telfer
+  Date: 30/092013
+*/
+/** IMPORTS  ************/
+/*
+  Import all Default Styles
+*/
+/**
+ * Variables
+ **/
+/**  TEXT OVERIDERS  ************/
+.txt-trans {
+  text-transform: uppercase; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+/**  MARGINS  ***********/
+.man {
+  margin: 0px; }
+
+.mtn {
+  margin-top: 0px; }
+
+.mrn {
+  margin-right: 0px; }
+
+.mbn {
+  margin-bottom: 0px; }
+
+.mln {
+  margin-left: 0px; }
+
+.mas {
+  margin: 5px; }
+
+.mts {
+  margin-top: 5px; }
+
+.mrs {
+  margin-right: 5px; }
+
+.mbs {
+  margin-bottom: 5px; }
+
+.mls {
+  margin-left: 5px; }
+
+.mam {
+  margin: 10px; }
+
+.mtm {
+  margin-top: 10px; }
+
+.mrm {
+  margin-right: 10px; }
+
+.mbm {
+  margin-bottom: 10px; }
+
+.mlm {
+  margin-left: 10px; }
+
+.maml {
+  margin: 20px; }
+
+.mtml {
+  margin-top: 20px; }
+
+.mrml {
+  margin-right: 20px; }
+
+.mbml {
+  margin-bottom: 20px; }
+
+.mlml {
+  margin-left: 20px; }
+
+.mal {
+  margin: 30px; }
+
+.mtl {
+  margin-top: 30px; }
+
+.mrl {
+  margin-right: 30px; }
+
+.mbl {
+  margin-bottom: 30px; }
+
+.mll {
+  margin-left: 30px; }
+
+.malr {
+  margin: 40px; }
+
+.mtlr {
+  margin-top: 40px; }
+
+.mrlr {
+  margin-right: 40px; }
+
+.mblr {
+  margin-bottom: 40px; }
+
+.mllr {
+  margin-left: 40px; }
+
+/*
+ * Mixins
+ */
+/** SKEW  ***********/
+/** BORDER RADIUS ***********/
+/** GRADIENTS  ***********/
+/*
+ * Color Guide
+ */
+/** DEFAULTS  ***********/
+/** TEXT COLOURS  *********/
+/** SECTIONS  ***********/
+/** FONT STYLE: Asap  ***********************/
+@font-face {
+  font-family: 'asap';
+  src: url("../fonts/asap-bold-webfont.eot"), url("../fonts/asap-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/asap-bold-webfont.ttf") format("truetype"), url("../fonts/asap-bold-webfont.woff") format("woff"), url("../fonts/asap-bold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'asap';
+  src: url("../fonts/asap-regular-webfont.eot"), url("../fonts/asap-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/asap-regular-webfont.ttf") format("truetype"), url("../fonts/asap-regular-webfont.woff") format("woff"), url("../fonts/asap-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/** FONT STYLE: Lato  ***********************/
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-bold-webfont.eot"), url("../fonts/lato-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bold-webfont.ttf") format("truetype"), url("../fonts/lato-bold-webfont.woff") format("woff"), url("../fonts/lato-bold-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-bolditalic-webfont.eot"), url("../fonts/lato-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-bolditalic-webfont.ttf") format("truetype"), url("../fonts/lato-bolditalic-webfont.woff") format("woff"), url("../fonts/lato-bolditalic-webfont.svg") format("svg");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-italic-webfont.eot"), url("../fonts/lato-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-italic-webfont.ttf") format("truetype"), url("../fonts/lato-italic-webfont.woff") format("woff"), url("../fonts/lato-italic-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-regular-webfont.eot"), url("../fonts/lato-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/lato-regular-webfont.ttf") format("truetype"), url("../fonts/lato-regular-webfont.woff") format("woff"), url("../fonts/lato-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/** FONT STYLE: Roboto Bold  ***********************/
+@font-face {
+  font-family: 'robotoBold';
+  src: url("../fonts/robotoslab-bold-webfont.eot"), url("../fonts/robotoslab-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-bold-webfont.ttf") format("truetype"), url("../fonts/robotoslab-bold-webfont.woff") format("woff"), url("../fonts/robotoslab-bold-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/** FONT STYLE: Roboto Light  ***********************/
+@font-face {
+  font-family: 'robotoLight';
+  src: url("../fonts/robotoslab-light-webfont.eot"), url("../fonts/robotoslab-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/robotoslab-light-webfont.ttf") format("truetype"), url("../fonts/robotoslab-light-webfont.woff") format("woff"), url("../fonts/robotoslab-light-webfont.svg") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+/** FONT STYLE: Ostrich  ***********************/
+@font-face {
+  font-family: 'ostrichBold';
+  src: url("../fonts/ostrich-bold.eot"), url("../fonts/ostrich-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ostrich-bold.ttf") format("truetype"), url("../fonts/ostrich-bold.woff") format("woff"), url("../fonts/ostrich-bold.svg") format("svg");
+  font-weight: lighter;
+  font-style: normal; }
+
+/*
+ * Typography
+ */
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  padding: 0;
+  font-family: "asap", Helvetica, Arial;
+  text-rendering: optimizeLegibility;
+  font-weight: normal; }
+
+h1 {
+  font-size: 45px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 21px; }
+
+h4 {
+  font-size: 18px; }
+
+section h2 {
+  margin: 0;
+  padding: 0; }
+
+section p {
+  color: #706e6e;
+  opacity: .8; }
+
+/** HEADLINE TYPE ONE  ********/
+.headline-type-one {
+  color: #fff;
+  font-family: "asap", Helvetica, Arial;
+  font-weight: bold; }
+
+.headline-type-two {
+  font-family: "asap", Helvetica, Arial;
+  color: #5fc7cd;
+  font-weight: bold; }
+
+.sub-headline {
+  font-size: 1.5em;
+  font-weight: normal;
+  color: #898989;
+  margin-bottom: 1em; }
+
+.headline-dark {
+  color: #384c36; }
+
+/*
+ * Links and Buttons
+ */
+a, button {
+  outline: none;
+  color: #231f20; }
+  a:hover, button:hover {
+    color: inherit; }
+
+a {
+  font-weight: bold; }
+
+/** Button Defaults ***********/
+.btn {
+  border: 0;
+  font-weight: bold;
+  padding: 0 0.3em;
+  vertical-align: inherit;
+  transition: all 0.2s linear;
+  font-size: inherit;
+  line-height: inherit; }
+  .btn.btn-primary {
+    background-color: transparent;
+    color: #B5A89D; }
+    .btn.btn-primary:hover {
+      background-color: transparent;
+      color: #2c2420;
+      opacity: .8;
+      text-decoration: underline; }
+  .btn.btn-secondary {
+    background-color: #e5c056;
+    color: #ffffff;
+    padding: 0.1em 0.5em; }
+    .btn.btn-secondary:hover {
+      background-color: #2c2420;
+      opacity: .8; }
+
+.link-inline {
+  font-weight: bold;
+  color: #5fc7cd;
+  text-decoration: underline; }
+  .link-inline:hover {
+    color: #5fc7cd;
+    text-decoration: none; }
+
+.link-light {
+  color: white; }
+  .link-light:hover {
+    color: inherit; }
+
+body {
+  font-size: 16px; }
+
+/*
+ * Set default styles to all chunks
+ */
+/** SECTIONS  **********/
+.skew {
+  -webkit-transform: skewY(-1deg);
+  -o-transform: skewY(-1deg);
+  -moz-transform: skewY(-1deg);
+  -ms-transform: skewY(-1deg);
+  transform: skewY(-1deg); }
+
+.anim-img img {
+  max-width: 100%; }
+
+.column, .column-2 {
+  display: inline-block;
+  vertical-align: top; }
+
+.column {
+  padding-right: 8%;
+  width: 67%; }
+
+.column-2 {
+  padding-left: 4%;
+  width: 20%; }
+
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+section {
+  position: relative;
+  padding: 4em 12%;
+  background: #fff;
+  color: #3c3c3e; }
+
+.section-last {
+  position: relative; }
+  .section-last:before, .section-last:after {
+    top: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none; }
+  .section-last:after {
+    top: 100%;
+    left: 13%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #ffffff;
+    border-width: 20px;
+    margin-left: -20px; }
+
+.update {
+  background-color: #45a26e;
+  color: #fff;
+  padding: 0.3em 0.5em;
+  font-size: 85%;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px; }
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 12px;
+  width: 12px;
+  margin-right: .5em; }
+  .icon.icon-twitter {
+    background: url(../img/icon-twitter.png) no-repeat left center transparent;
+    height: 15px;
+    width: 21px; }
+
+/** IMPORTS  **********/
+/*
+ * Section Top
+ */
+.section-top {
+  background-color: yellow; }
+
+/*
+ * Chunk for main banner area
+ * Here is shown my profile pic and access to twitter
+ */
+.section-banner {
+  background-color: green; }
+
+/*
+ * Colour Scheme for each section
+ */
+/* Pass a comma separated list of backgrounds: */
+/* Animate the positions of both of the backgrounds */
+.scheme-colour-1 {
+  color: #fff;
+  background-color: #5fc7cd; }
+
+.scheme-colour-2 {
+  background: #ecf6f0; }
+
+.scheme-colour-3 {
+  background: #231f20; }
+
+.group-items li.group-item {
+  display: inline-block;
+  margin-left: 1em;
+  vertical-align: top; }
+  .group-items li.group-item a {
+    color: #2b3040; }
+    .group-items li.group-item a .title {
+      display: block;
+      margin-top: 5px; }
+
+/*
+ * Modules
+ */
+.module {
+  text-align: center;
+  margin: 3em 0 2em; }
+  .module .module-section-image {
+    margin-bottom: 1em; }
+    .module .module-section-image img {
+      max-height: 120px; }
+  .module .module-section-title {
+    margin-bottom: .3em;
+    color: #898989; }
+  .module .module-section-headline {
+    color: #45a26e; }
+    .module .module-section-headline .book-author {
+      margin-top: .5em; }
+
+.selected-work {
+  padding: 0px; }
+  .selected-work li {
+    margin: 10px 0;
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%; }
+    @media screen and (min-width: 30em) {
+      .selected-work li {
+        width: 47%; } }
+    @media screen and (min-width: 56em) {
+      .selected-work li {
+        width: 32%; } }
+    .selected-work li span {
+      display: block; }
+
+.fixed-section {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 25em; }
+
+/*
+ * Butttons
+ */
+.button {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 0.8em 1em;
+  -webkit-border-radius: 7px;
+  -o-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  transition: all 0.2s linear;
+  -webkit-transition: all 0.2s linear; }
+  .button:hover {
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-decoration: none; }
+
+footer {
+  position: relative;
+  z-index: -2;
+  height: 28em; }
+  footer .footer-wrapper {
+    color: white;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: -1; }
+    footer .footer-wrapper .footer-wrapper-container {
+      padding: 3em 12%; }
+
+.copyright-wrapper .column {
+  padding: 2em 12%; }
+
+/* Media Queries for the layout */
+@media screen and (max-width: 68em) {
+  footer {
+    height: 30em; } }
+
+@media screen and (max-width: 54em) {
+  #wrapper {
+    width: 100%; }
+  .column {
+    display: block;
+    width: 100% !important; }
+  section {
+    padding: 3em 10%; }
+  .column-2 {
+    width: 100%; }
+  footer {
+    height: 40em; }
+    footer .footer-wrapper .footer-wrapper-container {
+      padding: 3em 10%; }
+    footer .column-container {
+      padding: 1em 10%; }
+  .text:first-child,
+  .text:nth-child(2) {
+    text-align: center; }
+  .icon {
+    margin: 0 auto; }
+  .col-2 .column:first-child .icon {
+    margin: 0 auto 50px; }
+  .col-2 .column:nth-child(2) .icon {
+    margin: 50px auto 0; } }
+
+html, body {
+  margin: 0;
+  padding: 0; }
+
+html {
+  overflow-y: scroll;
+  /* always force a scrollbar in non-IE */ }
+
+body {
+  font-family: "asap", Helvetica, Arial;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  z-index: 0; }
+
+#wrapper {
+  background-color: #ffffff;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  width: 100%; }

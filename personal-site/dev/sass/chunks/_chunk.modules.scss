@@ -1,0 +1,52 @@
+/*
+ * Modules
+ */
+
+
+.module {
+  text-align: center;
+  margin: 3em 0 2em;
+
+  .module-section-image {
+    margin-bottom: 1em;
+    img {
+      max-height: 120px;
+    }
+  }
+
+  .module-section-title {
+    margin-bottom: .3em;
+    color: #898989;
+  }
+  .module-section-headline {
+    color: #45a26e;
+    .book-author {
+      margin-top: .5em;
+    }
+  }
+}
+
+
+// Selected Work List
+.selected-work {
+	padding: 0px;
+	li {
+		margin: 10px 0;
+		list-style: none;
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+
+		@media screen and (min-width: 30em) {
+			width: 47%;
+		}
+
+		@media screen and (min-width: 56em) {
+			width: 32%;
+		}
+
+		span {
+			display: block;
+		}
+	}
+}
